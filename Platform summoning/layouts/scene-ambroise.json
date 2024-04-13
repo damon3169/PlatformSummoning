@@ -140,8 +140,8 @@
           "parameters": [
             "Character",
             "Physics2",
-            "ProjJump.AngleToObject(Character)",
-            "100",
+            "ProjDoubleJump.AngleToObject(Character)",
+            "90",
             "0",
             "0"
           ]
@@ -184,6 +184,28 @@
             "ProjDoubleJump",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "MettreAutour"
+          },
+          "parameters": [
+            "Test_angle",
+            "Character",
+            "10\n",
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Test_angle",
+            "Text",
+            "=",
+            "ToString(ProjJump.AngleToObject(Character))"
+          ]
         }
       ]
     },
@@ -222,7 +244,7 @@
             "Character",
             "Physics2",
             "ProjJump.AngleToObject(Character)",
-            "100",
+            "90",
             "0",
             "0"
           ]
@@ -265,6 +287,28 @@
             "ProjJump",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Test_angle",
+            "Text",
+            "=",
+            "ToString(ProjJump.AngleToObject(Character))"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreAutour"
+          },
+          "parameters": [
+            "Test_angle",
+            "Character",
+            "10\n",
+            "10"
+          ]
         }
       ]
     },
@@ -302,8 +346,8 @@
           "parameters": [
             "Character",
             "Physics2",
-            "ProjJump.AngleToObject(Character)",
-            "100",
+            "ProjDash.AngleToObject(Character)",
+            "90",
             "0",
             "0"
           ]
@@ -340,11 +384,33 @@
         },
         {
           "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Test_angle",
+            "Text",
+            "=",
+            "ToString(ProjJump.AngleToObject(Character))"
+          ]
+        },
+        {
+          "type": {
             "value": "Delete"
           },
           "parameters": [
             "ProjDash",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreAutour"
+          },
+          "parameters": [
+            "Test_angle",
+            "Character",
+            "10\n",
+            "10"
           ]
         }
       ]
