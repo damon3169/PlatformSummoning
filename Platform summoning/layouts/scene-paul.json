@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8081094648115776,
+    "zoomFactor": 0.45985214267363317,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -32,7 +32,7 @@
       "name": "Character",
       "persistentUuid": "0c290278-6b15-4330-99cf-445b8b301600",
       "width": 0,
-      "x": 896,
+      "x": 892,
       "y": 576,
       "zOrder": 1,
       "numberProperties": [],
@@ -164,8 +164,8 @@
             "OrbiteJump",
             "1",
             "50",
-            "500",
-            "50",
+            "400",
+            "100",
             "",
             "1",
             "-90",
@@ -179,12 +179,12 @@
           },
           "parameters": [
             "",
-            "Character",
+            "OrbiteJump",
             "OrbiteDash",
             "1",
-            "80",
-            "350",
-            "50",
+            "180",
+            "150",
+            "150",
             "",
             "1",
             "-90",
@@ -202,8 +202,8 @@
             "OrbiteDoubleJump",
             "1",
             "100",
-            "200",
-            "50",
+            "300",
+            "150",
             "",
             "1",
             "-90",
@@ -276,13 +276,60 @@
             "value": "FireBullet::FireBullet::FireTowardObject"
           },
           "parameters": [
-            "OrbiteJump",
+            "OrbiteDash",
             "FireBullet",
             "OrbiteJump.X()",
             "OrbiteJump.Y()",
-            "ProjJump",
+            "ProjDash",
             "Character",
-            "300",
+            "400",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::IsJumping"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "\"Jump\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "OrbiteDoubleJump",
+            "FireBullet",
+            "OrbiteJump.X()",
+            "OrbiteJump.Y()",
+            "ProjDoubleJump",
+            "Character",
+            "400",
             ""
           ]
         }
