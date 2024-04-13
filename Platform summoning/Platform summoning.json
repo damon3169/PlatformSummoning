@@ -143,6 +143,42 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "AdvancedJump",
+          "type": "AdvancedJump::AdvancedJump",
+          "PlatformerBehavior": "PlatformerObject",
+          "CoyoteTimeFrameDuration": 0.25,
+          "CanCoyoteJump": false,
+          "WasInTheAir": false,
+          "AirJumpCountMaximum": 1,
+          "AreFloorJumpCountedAsAirJump": false,
+          "AirJumpCount": 0,
+          "WasJumpKeyReleased": false
+        },
+        {
+          "name": "HorizontalDash",
+          "type": "AdvancedJump::HorizontalDash",
+          "PlatformerCharacter": "PlatformerObject",
+          "PlatformerConfigurationStack": "PlatformerConfigurationStack",
+          "DashInitialSpeed": 500,
+          "DashSustainDurationMin": 0,
+          "DashSustainDurationMax": 0.25,
+          "DashSustainAcceleration": 1500,
+          "DashSustainSpeedMax": 750,
+          "DashSustainGravity": 0,
+          "DashDecceleration": 3000,
+          "DashGravity": 1000,
+          "CoolDownDuration": 0.25,
+          "LastDirectionIsLeft": false,
+          "DashKeyIsPressed": false,
+          "IsSustainning": false,
+          "CanDash": true
+        },
+        {
+          "name": "PlatformerConfigurationStack",
+          "type": "AdvancedJump::PlatformerConfigurationStack",
+          "PlatformerCharacter": "PlatformerObject"
+        },
+        {
           "name": "PlatformerGamepadMapper",
           "type": "Gamepads::PlatformerGamepadMapper",
           "PlatformerCharacter": "PlatformerObject",
@@ -558,6 +594,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/advancedjump"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/firebullet"

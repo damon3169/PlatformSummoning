@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0192755261488824,
+    "zoomFactor": 1.1259024631360837,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -118,23 +118,29 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AdvancedJump::HorizontalDash::SimulateDashKey"
+          },
+          "parameters": [
+            "Character",
+            "HorizontalDash",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -185,6 +191,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
+    },
+    {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
     },
@@ -201,12 +211,20 @@
       "type": "FlippableCapability::FlippableBehavior"
     },
     {
+      "name": "HorizontalDash",
+      "type": "AdvancedJump::HorizontalDash"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
       "name": "Platform",
       "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerConfigurationStack",
+      "type": "AdvancedJump::PlatformerConfigurationStack"
     },
     {
       "name": "PlatformerGamepadMapper",
