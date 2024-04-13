@@ -128,6 +128,42 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Level/802119165cd6e28ce73e7884d6f10a1e3ad4d4d4bdc91e5f4723528c8abc9d23_Coin.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_1",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_4",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -449,16 +485,17 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_1.png",
+                  "image": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -474,20 +511,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 3,
-                        "y": 24
+                        "x": 4,
+                        "y": 5
                       },
                       {
-                        "x": 112,
-                        "y": 24
+                        "x": 95,
+                        "y": 5
                       },
                       {
-                        "x": 112,
-                        "y": 75
+                        "x": 95,
+                        "y": 90
                       },
                       {
-                        "x": 3,
-                        "y": 75
+                        "x": 4,
+                        "y": 90
                       }
                     ]
                   ]
@@ -557,6 +594,190 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "OrbiteDash",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 10,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 74,
+                        "y": 4
+                      },
+                      {
+                        "x": 74,
+                        "y": 72
+                      },
+                      {
+                        "x": 4,
+                        "y": 72
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "OrbiteDoubleJump",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 10,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 48,
+                        "y": 2
+                      },
+                      {
+                        "x": 48,
+                        "y": 44
+                      },
+                      {
+                        "x": 2,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -570,6 +791,12 @@
       },
       {
         "objectName": "OrbiteJump"
+      },
+      {
+        "objectName": "OrbiteDash"
+      },
+      {
+        "objectName": "OrbiteDoubleJump"
       },
       {
         "objectName": "ProjJump"

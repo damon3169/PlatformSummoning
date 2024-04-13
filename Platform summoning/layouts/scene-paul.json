@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.1259024631360837,
+    "zoomFactor": 0.8081094648115776,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -53,6 +53,96 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "cd747b14-53ab-4e54-9ef3-99f0430a78c3",
+      "width": 0,
+      "x": 1088,
+      "y": 672,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "057e2080-59f7-461b-b81f-e7e337142267",
+      "width": 0,
+      "x": 1376,
+      "y": 448,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "1c68ff50-3a71-4483-8bf3-003da9f08c40",
+      "width": 0,
+      "x": 2034,
+      "y": 448,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "b597bbb0-78e4-426a-9b84-d9a2b0bb8f29",
+      "width": 0,
+      "x": 2368,
+      "y": 320,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "0874283e-fea5-4017-8c44-89cc829b4662",
+      "width": 0,
+      "x": 2706,
+      "y": 160,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "0fca593c-aff0-4a47-ad6e-31daa26acdfa",
+      "width": 0,
+      "x": 2386,
+      "y": -128,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [],
@@ -82,6 +172,44 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "OrbitingObjects::AnimateOrbitingObjects"
+          },
+          "parameters": [
+            "",
+            "Character",
+            "OrbiteDash",
+            "1",
+            "80",
+            "350",
+            "50",
+            "",
+            "1",
+            "-90",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OrbitingObjects::AnimateOrbitingObjects"
+          },
+          "parameters": [
+            "",
+            "Character",
+            "OrbiteDoubleJump",
+            "1",
+            "100",
+            "200",
+            "50",
+            "",
+            "1",
+            "-90",
+            "",
+            ""
+          ]
         }
       ]
     },
@@ -96,6 +224,12 @@
             "Character",
             "PlatformerObject"
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -121,11 +255,68 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "AdvancedJump::HorizontalDash::IsDashing"
           },
           "parameters": [
-            "",
-            "LShift"
+            "Character",
+            "HorizontalDash",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "OrbiteJump",
+            "FireBullet",
+            "OrbiteJump.X()",
+            "OrbiteJump.Y()",
+            "ProjJump",
+            "Character",
+            "300",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "LShift"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"X\"",
+                ""
+              ]
+            }
           ]
         }
       ],
