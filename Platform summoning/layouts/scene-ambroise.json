@@ -497,6 +497,17 @@
             "=",
             "\"Greenman\""
           ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "Character",
+            "0",
+            "0",
+            ""
+          ]
         }
       ]
     }

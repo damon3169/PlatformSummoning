@@ -94,7 +94,7 @@
         "alwaysLoaded": false,
         "file": "assets/Platform 1.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Platform 1.png\",\"extension\":\".png\"}",
         "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform 1.png",
         "smoothed": true,
         "userAdded": false,
@@ -196,7 +196,7 @@
         "alwaysLoaded": false,
         "file": "assets/GreenHero_Punch_8.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/GreenHero_Punch_8.png\",\"extension\":\".png\"}",
         "name": "b2ef854b74d176c44a63b9094be663436fe9427b3472bd6ae6561ad9fd1a0062_GreenHero_Punch_8.png",
         "smoothed": true,
         "userAdded": true,
@@ -229,6 +229,78 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "802119165cd6e28ce73e7884d6f10a1e3ad4d4d4bdc91e5f4723528c8abc9d23_Coin",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform 1",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PlatformSlide.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/PlatformSlide.png\"}",
+        "name": "PlatformSlide",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform4",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform5",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Greenman.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Greenman",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/GreenHero_Punch_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\GreenHero_Punch_8.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -281,20 +353,20 @@
           "type": "Physics2::Physics2Behavior",
           "bodyType": "Dynamic",
           "bullet": false,
-          "fixedRotation": true,
+          "fixedRotation": false,
           "canSleep": true,
           "shape": "Circle",
-          "shapeDimensionA": 30,
+          "shapeDimensionA": 20,
           "shapeDimensionB": 0,
-          "shapeOffsetX": 0,
-          "shapeOffsetY": 10,
+          "shapeOffsetX": -2,
+          "shapeOffsetY": -2,
           "polygonOrigin": "Center",
           "vertices": [],
           "density": 1,
           "friction": 0,
           "restitution": 0,
           "linearDamping": 0,
-          "angularDamping": 0,
+          "angularDamping": 0.1,
           "gravityScale": 1,
           "layers": 1,
           "masks": 1
@@ -315,15 +387,15 @@
           "JumpButton": "A or Cross"
         },
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 3000,
           "deceleration": 2000,
           "gravity": 1000,
           "jumpSpeed": 1000,
           "jumpSustainTime": 0,
           "maxSpeed": 600,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
@@ -413,11 +485,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "79d09a2bf773d2f609a50301a6663b7d095d5b908d3935321b7273fb98eb501f_GreenHero_Idle_13.png",
+                  "image": "Greenman",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -433,19 +506,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 22,
-                        "y": 21
+                        "x": 25,
+                        "y": 22
                       },
                       {
-                        "x": 77,
-                        "y": 21
+                        "x": 74,
+                        "y": 22
                       },
                       {
-                        "x": 77,
+                        "x": 74,
                         "y": 85
                       },
                       {
-                        "x": 22,
+                        "x": 25,
                         "y": 85
                       }
                     ]
@@ -461,6 +534,7 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -481,19 +555,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 22,
-                        "y": 21
+                        "x": 25,
+                        "y": 22
                       },
                       {
-                        "x": 77,
-                        "y": 21
+                        "x": 74,
+                        "y": 22
                       },
                       {
-                        "x": 77,
+                        "x": 74,
                         "y": 85
                       },
                       {
-                        "x": 22,
+                        "x": 25,
                         "y": 85
                       }
                     ]
@@ -519,11 +593,11 @@
           "type": "Physics2::Physics2Behavior",
           "bodyType": "Static",
           "bullet": false,
-          "fixedRotation": true,
+          "fixedRotation": false,
           "canSleep": true,
           "shape": "Box",
-          "shapeDimensionA": 280,
-          "shapeDimensionB": 80,
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
           "shapeOffsetX": 0,
           "shapeOffsetY": 0,
           "polygonOrigin": "Center",
@@ -547,16 +621,17 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform 1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform 1.png",
+                  "image": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -564,7 +639,7 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
                     "x": 137,
                     "y": 48
@@ -572,28 +647,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 30
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 25,
-                        "y": 11
+                        "x": 128,
+                        "y": 0
                       },
                       {
-                        "x": 256,
-                        "y": 11.5
+                        "x": 128,
+                        "y": 128
                       },
                       {
-                        "x": 266.5,
-                        "y": 32.5
-                      },
-                      {
-                        "x": 246,
-                        "y": 71
-                      },
-                      {
-                        "x": 23,
-                        "y": 71.5
+                        "x": 0,
+                        "y": 128
                       }
                     ]
                   ]
@@ -1062,6 +1129,107 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "PlatformSlide",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": false,
+          "canSleep": true,
+          "shape": "Polygon",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [
+            {
+              "x": -32,
+              "y": 32
+            },
+            {
+              "x": 32,
+              "y": 32
+            },
+            {
+              "x": 32,
+              "y": -28
+            }
+          ],
+          "density": 1,
+          "friction": 0.3,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 1,
+          "masks": 1
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "PlatformSlide",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "PlatformSlide",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 137,
+                    "y": 48
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 64
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1072,6 +1240,9 @@
       },
       {
         "objectName": "Platform"
+      },
+      {
+        "objectName": "PlatformSlide"
       },
       {
         "objectName": "OrbiteJump"
