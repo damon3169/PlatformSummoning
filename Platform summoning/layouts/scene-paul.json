@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.45985214267363317,
+    "zoomFactor": 0.2987985363606905,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -143,6 +143,37 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "de781e51-c05b-439b-912c-c873e357afd0",
+      "width": 0,
+      "x": 434,
+      "y": 832,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 99,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "e0889fa8-8e7a-49a2-b38c-7d8b8c098861",
+      "width": 3566,
+      "x": 210,
+      "y": 1085,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [],
@@ -150,6 +181,13 @@
     "folderName": "__ROOT"
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Scene Ambroise"
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
@@ -218,11 +256,12 @@
       "conditions": [
         {
           "type": {
-            "value": "PlatformBehavior::IsJumping"
+            "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
           },
           "parameters": [
             "Character",
-            "PlatformerObject"
+            "PlatformerObject",
+            "\"Jump\""
           ]
         },
         {
@@ -273,16 +312,13 @@
       "actions": [
         {
           "type": {
-            "value": "FireBullet::FireBullet::FireTowardObject"
+            "value": "Create"
           },
           "parameters": [
-            "OrbiteDash",
-            "FireBullet",
-            "OrbiteJump.X()",
-            "OrbiteJump.Y()",
+            "",
             "ProjDash",
-            "Character",
-            "400",
+            "OrbiteDash.X()",
+            "OrbiteDash.Y()",
             ""
           ]
         }
@@ -293,21 +329,12 @@
       "conditions": [
         {
           "type": {
-            "value": "PlatformBehavior::IsJumping"
+            "inverted": true,
+            "value": "PlatformBehavior::CanJump"
           },
           "parameters": [
             "Character",
             "PlatformerObject"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
-          },
-          "parameters": [
-            "Character",
-            "PlatformerObject",
-            "\"Jump\""
           ]
         },
         {
@@ -325,11 +352,11 @@
           "parameters": [
             "OrbiteDoubleJump",
             "FireBullet",
-            "OrbiteJump.X()",
-            "OrbiteJump.Y()",
+            "OrbiteDoubleJump.X()",
+            "OrbiteDoubleJump.Y()",
             "ProjDoubleJump",
             "Character",
-            "400",
+            "100",
             ""
           ]
         }
@@ -455,6 +482,14 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Physics2",
+      "type": "Physics2::Physics2Behavior",
+      "gravityX": 0,
+      "gravityY": 9.8,
+      "scaleX": 100,
+      "scaleY": 100
     },
     {
       "name": "Platform",

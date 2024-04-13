@@ -169,7 +169,7 @@
         "alwaysLoaded": false,
         "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_5.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_5.png\"}",
         "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_5",
         "smoothed": true,
         "userAdded": true
@@ -204,6 +204,33 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Green Hero/b2ef854b74d176c44a63b9094be663436fe9427b3472bd6ae6561ad9fd1a0062_GreenHero_Punch_8.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ProjDoubleJump3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ProjDoubleJump2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_6",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/802119165cd6e28ce73e7884d6f10a1e3ad4d4d4bdc91e5f4723528c8abc9d23_Coin2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "802119165cd6e28ce73e7884d6f10a1e3ad4d4d4bdc91e5f4723528c8abc9d23_Coin",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -235,7 +262,7 @@
           "type": "AdvancedJump::HorizontalDash",
           "PlatformerCharacter": "PlatformerObject",
           "PlatformerConfigurationStack": "PlatformerConfigurationStack",
-          "DashInitialSpeed": 500,
+          "DashInitialSpeed": 2000,
           "DashSustainDurationMin": 0,
           "DashSustainDurationMax": 0.25,
           "DashSustainAcceleration": 1500,
@@ -288,21 +315,21 @@
           "JumpButton": "A or Cross"
         },
         {
+          "acceleration": 3000,
+          "deceleration": 2000,
+          "gravity": 1000,
+          "jumpSpeed": 1000,
+          "jumpSustainTime": 0,
+          "maxSpeed": 600,
           "name": "PlatformerObject",
+          "slopeMaxAngle": 60,
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 1500,
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
-          "deceleration": 1500,
-          "gravity": 1000,
           "ignoreDefaultControls": false,
-          "jumpSpeed": 600,
-          "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 700,
-          "maxSpeed": 250,
-          "slopeMaxAngle": 60,
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
           "yGrabOffset": 0
@@ -782,7 +809,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_5",
+                  "image": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_6",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -798,20 +825,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 4,
-                        "y": 3
+                        "x": 6,
+                        "y": 4
                       },
                       {
-                        "x": 74,
-                        "y": 3
+                        "x": 111,
+                        "y": 4
                       },
                       {
-                        "x": 74,
-                        "y": 72
+                        "x": 111,
+                        "y": 108
                       },
                       {
-                        "x": 4,
-                        "y": 72
+                        "x": 6,
+                        "y": 108
                       }
                     ]
                   ]
@@ -935,7 +962,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "802119165cd6e28ce73e7884d6f10a1e3ad4d4d4bdc91e5f4723528c8abc9d23_Coin.png",
+                  "image": "802119165cd6e28ce73e7884d6f10a1e3ad4d4d4bdc91e5f4723528c8abc9d23_Coin",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -955,16 +982,16 @@
                         "y": 0
                       },
                       {
-                        "x": 28,
+                        "x": 80,
                         "y": 0
                       },
                       {
-                        "x": 28,
-                        "y": 35
+                        "x": 80,
+                        "y": 80
                       },
                       {
                         "x": 0,
-                        "y": 35
+                        "y": 80
                       }
                     ]
                   ]
@@ -996,7 +1023,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ProjDoubleJump",
+                  "image": "ProjDoubleJump2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1012,20 +1039,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
+                        "x": 2,
                         "y": 0
                       },
                       {
-                        "x": 63,
+                        "x": 148,
                         "y": 0
                       },
                       {
-                        "x": 63,
-                        "y": 62
+                        "x": 148,
+                        "y": 145
                       },
                       {
-                        "x": 1,
-                        "y": 62
+                        "x": 2,
+                        "y": 145
                       }
                     ]
                   ]

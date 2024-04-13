@@ -111,83 +111,14 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "CollisionNP"
           },
           "parameters": [
-            "",
-            "LShift"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::FireTowardObject"
-          },
-          "parameters": [
-            "OrbiteJump",
-            "FireBullet",
-            "OrbiteJump.X()",
-            "OrbiteJump.Y()",
-            "ProjJump",
             "Character",
-            "150",
+            "ProjDoubleJump",
+            "ProjJump",
+            "",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Character",
-                "ProjJump",
-                "ProjJump",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Character",
-                "ProjDash",
-                "ProjJump",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Character",
-                "ProjDoubleJump",
-                "ProjJump",
-                "",
-                ""
-              ]
-            }
           ]
         }
       ],
@@ -210,7 +141,7 @@
             "Character",
             "Physics2",
             "ProjJump.AngleToObject(Character)",
-            "5",
+            "100",
             "0",
             "0"
           ]
@@ -243,6 +174,177 @@
             "Animation",
             "=",
             "\"sliding\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjDoubleJump",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Character",
+            "ProjJump",
+            "ProjJump",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Physics2::ApplyPolarForce"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "ProjJump.AngleToObject(Character)",
+            "100",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Character",
+            "\"TimerFall\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Character",
+            "Animation",
+            "=",
+            "\"sliding\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjJump",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Character",
+            "ProjDash",
+            "ProjJump",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Physics2::ApplyPolarForce"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "ProjJump.AngleToObject(Character)",
+            "100",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Character",
+            "\"TimerFall\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Character",
+            "Animation",
+            "=",
+            "\"sliding\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjDash",
+            ""
           ]
         }
       ]
@@ -283,7 +385,18 @@
             "Character",
             "\"TimerFall\"",
             ">",
-            "2"
+            "0.6"
+          ]
+        },
+        {
+          "type": {
+            "value": "Physics2::Collision"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "Platform",
+            ""
           ]
         }
       ],
