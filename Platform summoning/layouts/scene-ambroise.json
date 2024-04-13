@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0192755261488824,
+    "zoomFactor": 0.5800155239904861,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,14 +26,15 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 99,
       "layer": "",
-      "name": "Character",
-      "persistentUuid": "0c290278-6b15-4330-99cf-445b8b301600",
-      "width": 0,
-      "x": 896,
-      "y": 576,
+      "name": "Platform",
+      "persistentUuid": "3f820772-73e6-4e51-8702-50f9b80bc861",
+      "width": 2720,
+      "x": -512,
+      "y": 637,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -44,428 +45,99 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "Platform",
-      "persistentUuid": "eafb2f25-9a96-4d09-9584-87ea29f9a44d",
+      "name": "Character",
+      "persistentUuid": "55ff06e4-6765-4944-867b-c02c27c46c2b",
       "width": 0,
-      "x": 818,
-      "y": 672,
+      "x": 960,
+      "y": 480,
       "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "OrbiteJump",
+      "persistentUuid": "7aed2d07-15a7-4012-9099-85c7dd2ca90a",
+      "width": 0,
+      "x": 1152,
+      "y": 192,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "5aa030e4-0cbf-4a76-8dfc-6ad84c4e1270",
+      "width": 0,
+      "x": 466,
+      "y": 512,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "b6d3036e-31b9-4f73-b211-b1856f09a8fc",
+      "width": 0,
+      "x": 768,
+      "y": 224,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
-  "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Character",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "PlatformerGamepadMapper",
-          "type": "Gamepads::PlatformerGamepadMapper",
-          "PlatformerCharacter": "PlatformerObject",
-          "GamepadIdentifier": 1,
-          "UseArrows": true,
-          "UseLeftStick": true,
-          "UseRightStick": false,
-          "JumpButton": "A or Cross"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 1500,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": true,
-          "deceleration": 1500,
-          "gravity": 1000,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 600,
-          "jumpSustainTime": 0.2,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 700,
-          "maxSpeed": 250,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        },
-        {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.9,
-          "RightwardSpeed": 0.9,
-          "UpwardSpeed": 0.9,
-          "DownwardSpeed": 0.9,
-          "FollowOnX": true,
-          "FollowOnY": true,
-          "FollowFreeAreaLeft": 0,
-          "FollowFreeAreaRight": 0,
-          "FollowFreeAreaTop": 0,
-          "FollowFreeAreaBottom": 0,
-          "CameraOffsetX": 0,
-          "CameraOffsetY": 0,
-          "CameraDelay": 0,
-          "ForecastTime": 0,
-          "ForecastHistoryDuration": 0,
-          "LogLeftwardSpeed": 2.0247e-320,
-          "LogRightwardSpeed": 2.0247e-320,
-          "LogDownwardSpeed": 2.0247e-320,
-          "LogUpwardSpeed": 2.0247e-320,
-          "DelayedCenterX": 2.0247e-320,
-          "DelayedCenterY": 2.0247e-320,
-          "ForecastHistoryMeanX": 2.0247e-320,
-          "ForecastHistoryMeanY": 2.0247e-320,
-          "ForecastHistoryVarianceX": 2.0247e-320,
-          "ForecastHistoryCovariance": 2.0247e-320,
-          "ForecastHistoryLinearA": 2.0247e-320,
-          "ForecastHistoryLinearB": 2.0247e-320,
-          "ForecastedX": 2.0247e-320,
-          "ForecastedY": 2.0247e-320,
-          "ProjectedNewestX": 2.0247e-320,
-          "ProjectedNewestY": 2.0247e-320,
-          "ProjectedOldestX": 2.0247e-320,
-          "ProjectedOldestY": 2.0247e-320,
-          "ForecastHistoryVarianceY": 2.0247e-320,
-          "Index": 2.0247e-320,
-          "CameraDelayCatchUpSpeed": 0,
-          "CameraExtraDelay": 2.0247e-320,
-          "WaitingSpeedXMax": 2.0247e-320,
-          "WaitingSpeedYMax": 2.0247e-320,
-          "WaitingEnd": 2.0247e-320,
-          "CameraDelayCatchUpDuration": 2.0247e-320,
-          "LeftwardSpeedMax": 9000,
-          "RightwardSpeedMax": 9000,
-          "UpwardSpeedMax": 9000,
-          "DownwardSpeedMax": 9000,
-          "OldX": 9000.000000007454,
-          "OldY": 9000.000000007454,
-          "IsCalledManually": false
-        },
-        {
-          "name": "SmoothPlatformerCamera",
-          "type": "SmoothCamera::SmoothPlatformerCamera",
-          "PlatformerCharacter": "PlatformerObject",
-          "SmoothCamera": "SmoothCamera",
-          "JumpOriginY": 2.143215749033e-312,
-          "AirFollowFreeAreaTop": 0,
-          "AirFollowFreeAreaBottom": 0,
-          "FloorFollowFreeAreaTop": 0,
-          "FloorFollowFreeAreaBottom": 0,
-          "AirUpwardSpeed": 0.95,
-          "AirDownwardSpeed": 0.95,
-          "FloorUpwardSpeed": 0.9,
-          "FloorDownwardSpeed": 0.9,
-          "AirUpwardSpeedMax": 9000,
-          "AirDownwardSpeedMax": 9000,
-          "FloorUpwardSpeedMax": 9000,
-          "FloorDownwardSpeedMax": 9000
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "79d09a2bf773d2f609a50301a6663b7d095d5b908d3935321b7273fb98eb501f_GreenHero_Idle_13.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 22,
-                        "y": 21
-                      },
-                      {
-                        "x": 77,
-                        "y": 21
-                      },
-                      {
-                        "x": 77,
-                        "y": 85
-                      },
-                      {
-                        "x": 22,
-                        "y": 85
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "Platform",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": false,
-          "platformType": "NormalPlatform",
-          "yGrabOffset": 0
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform 1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 137,
-                    "y": 48
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 30
-                      },
-                      {
-                        "x": 25,
-                        "y": 11
-                      },
-                      {
-                        "x": 256,
-                        "y": 11.5
-                      },
-                      {
-                        "x": 266.5,
-                        "y": 32.5
-                      },
-                      {
-                        "x": 246,
-                        "y": 71
-                      },
-                      {
-                        "x": 23,
-                        "y": 71.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "OrbiteJump",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 24
-                      },
-                      {
-                        "x": 112,
-                        "y": 24
-                      },
-                      {
-                        "x": 112,
-                        "y": 75
-                      },
-                      {
-                        "x": 3,
-                        "y": 75
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "ProjJump",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "AdvancedProjectile",
-          "type": "AdvancedProjectile::AdvancedProjectile",
-          "MaxLifetime": 0,
-          "MaxDistanceFromStartingPosition": 0,
-          "MaxSpeed": 0,
-          "MinSpeed": 0,
-          "Acceleration": 1,
-          "StartingSpeed": 0,
-          "DeleteWhenLifetimeExceeded": true,
-          "DeleteWhenDistanceExceeded": true
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "802119165cd6e28ce73e7884d6f10a1e3ad4d4d4bdc91e5f4723528c8abc9d23_Coin.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 28,
-                        "y": 0
-                      },
-                      {
-                        "x": 28,
-                        "y": 35
-                      },
-                      {
-                        "x": 0,
-                        "y": 35
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "objects": [],
   "objectsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "objectName": "Character"
-      },
-      {
-        "objectName": "Platform"
-      },
-      {
-        "objectName": "OrbiteJump"
-      },
-      {
-        "objectName": "ProjJump"
-      }
-    ]
+    "folderName": "__ROOT"
   },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "conditions": [
         {
           "type": {
-            "value": "OrbitingObjects::AnimateOrbitingObjects"
+            "value": "KeyPressed"
           },
           "parameters": [
             "",
-            "Character",
+            "LShift"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
             "OrbiteJump",
-            "1",
-            "50",
-            "500",
-            "50",
-            "",
-            "1",
-            "-90",
-            "",
+            "FireBullet",
+            "OrbiteJump.X()",
+            "OrbiteJump.Y()",
+            "ProjJump",
+            "Character",
+            "150",
             ""
           ]
         }
@@ -476,45 +148,178 @@
       "conditions": [
         {
           "type": {
-            "value": "PlatformBehavior::IsJumping"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "Character",
-            "PlatformerObject"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Character",
+                "ProjJump",
+                "ProjJump",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Character",
+                "ProjDash",
+                "ProjJump",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Character",
+                "ProjDoubleJump",
+                "ProjJump",
+                "",
+                ""
+              ]
+            }
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "Create"
+            "value": "ActivateBehavior"
           },
           "parameters": [
-            "",
-            "ProjJump",
-            "OrbiteJump.X()",
-            "OrbiteJump.Y()",
+            "Character",
+            "Physics2",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Physics2::ApplyPolarForce"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "ProjJump.AngleToObject(Character)",
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
             ""
           ]
         },
         {
           "type": {
-            "value": "AdvancedProjectile::AdvancedProjectile::SetStartingSpeed"
+            "value": "ResetObjectTimer"
           },
           "parameters": [
-            "ProjJump",
-            "AdvancedProjectile",
+            "Character",
+            "\"TimerFall\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Character",
+            "Animation",
             "=",
-            "10",
-            ""
+            "\"sliding\""
           ]
         }
       ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Character",
+            "\"TimerFall\"",
+            ">",
+            "2"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "Physics2",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Character",
+            "Animation",
+            "=",
+            "\"Greenman\""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -565,8 +370,8 @@
   ],
   "behaviorsSharedData": [
     {
-      "name": "AdvancedProjectile",
-      "type": "AdvancedProjectile::AdvancedProjectile"
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
     },
     {
       "name": "Animation",
@@ -577,16 +382,36 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "HorizontalDash",
+      "type": "AdvancedJump::HorizontalDash"
     },
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "Physics2",
+      "type": "Physics2::Physics2Behavior",
+      "gravityX": 0,
+      "gravityY": 9.8,
+      "scaleX": 100,
+      "scaleY": 100
+    },
+    {
       "name": "Platform",
       "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerConfigurationStack",
+      "type": "AdvancedJump::PlatformerConfigurationStack"
     },
     {
       "name": "PlatformerGamepadMapper",

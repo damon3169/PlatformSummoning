@@ -191,6 +191,19 @@
         "name": "ProjDoubleJump",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/GreenHero_Punch_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "b2ef854b74d176c44a63b9094be663436fe9427b3472bd6ae6561ad9fd1a0062_GreenHero_Punch_8.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GDevelop examples/Platformer/Green Hero/b2ef854b74d176c44a63b9094be663436fe9427b3472bd6ae6561ad9fd1a0062_GreenHero_Punch_8.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -235,6 +248,29 @@
           "DashKeyIsPressed": false,
           "IsSustainning": false,
           "CanDash": true
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Dynamic",
+          "bullet": false,
+          "fixedRotation": true,
+          "canSleep": true,
+          "shape": "Circle",
+          "shapeDimensionA": 30,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 10,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 1,
+          "friction": 0,
+          "restitution": 0,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "gravityScale": 1,
+          "layers": 1,
+          "masks": 1
         },
         {
           "name": "PlatformerConfigurationStack",
@@ -345,7 +381,7 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "Greenman",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -355,6 +391,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "79d09a2bf773d2f609a50301a6663b7d095d5b908d3935321b7273fb98eb501f_GreenHero_Idle_13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 22,
+                        "y": 21
+                      },
+                      {
+                        "x": 77,
+                        "y": 21
+                      },
+                      {
+                        "x": 77,
+                        "y": 85
+                      },
+                      {
+                        "x": 22,
+                        "y": 85
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sliding",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "b2ef854b74d176c44a63b9094be663436fe9427b3472bd6ae6561ad9fd1a0062_GreenHero_Punch_8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -403,6 +487,29 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": true,
+          "canSleep": true,
+          "shape": "Box",
+          "shapeDimensionA": 280,
+          "shapeDimensionB": 80,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 1,
+          "friction": 0.3,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 1,
+          "masks": 1
+        },
         {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
