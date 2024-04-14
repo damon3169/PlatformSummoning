@@ -339,20 +339,7 @@
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "DebuggerTools::EnableDebugDraw"
-          },
-          "parameters": [
-            "",
-            "",
-            "yes",
-            "",
-            ""
-          ]
-        }
-      ]
+      "actions": []
     }
   ]
 }
