@@ -948,12 +948,21 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
-            "value": "PlatformBehavior::CanJump"
+            "value": "PlatformBehavior::IsJumping"
           },
           "parameters": [
             "Character",
             "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "<",
+            "2"
           ]
         },
         {
@@ -976,6 +985,18 @@
             "ProjJump",
             "Character",
             "350",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "impactMetal_001.ogg",
+            "",
+            "",
             ""
           ]
         }
@@ -1014,6 +1035,18 @@
             "ProjDash",
             "Character",
             "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "lowFrequency_explosion_000.ogg",
+            "",
+            "",
             ""
           ]
         },
@@ -1267,8 +1300,30 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "wistful-waltz-theo-gerard-main-version-25155-02-13.mp3",
+            "yes",
+            "",
+            "0.8"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

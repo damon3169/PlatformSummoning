@@ -546,6 +546,46 @@
         "name": "Platform_Reset",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "wistful-waltz-theo-gerard-main-version-25155-02-13.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "wistful-waltz-theo-gerard-main-version-25155-02-13.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "lowFrequency_explosion_001.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "lowFrequency_explosion_001.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "lowFrequency_explosion_000.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "lowFrequency_explosion_000.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "impactMetal_001.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "impactMetal_001.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

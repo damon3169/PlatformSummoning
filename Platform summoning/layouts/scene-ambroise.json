@@ -751,6 +751,10 @@
       "type": "PlatformBehavior::PlatformerObjectBehavior"
     },
     {
+      "name": "RectangleMovement",
+      "type": "RectangleMovement::RectangleMovement"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
