@@ -184,28 +184,6 @@
             "ProjDoubleJump",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "MettreAutour"
-          },
-          "parameters": [
-            "Test_angle",
-            "Character",
-            "10\n",
-            "10"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_angle",
-            "Text",
-            "=",
-            "ToString(ProjJump.AngleToObject(Character))"
-          ]
         }
       ]
     },
@@ -287,28 +265,6 @@
             "ProjJump",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_angle",
-            "Text",
-            "=",
-            "ToString(ProjJump.AngleToObject(Character))"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreAutour"
-          },
-          "parameters": [
-            "Test_angle",
-            "Character",
-            "10\n",
-            "10"
-          ]
         }
       ]
     },
@@ -380,17 +336,6 @@
             "Animation",
             "=",
             "\"sliding\""
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_angle",
-            "Text",
-            "=",
-            "ToString(ProjJump.AngleToObject(Character))"
           ]
         },
         {
@@ -487,33 +432,11 @@
         },
         {
           "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_angle",
-            "Text",
-            "=",
-            "ToString(ProjJump.AngleToObject(Character))"
-          ]
-        },
-        {
-          "type": {
             "value": "Delete"
           },
           "parameters": [
             "ProjDash",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreAutour"
-          },
-          "parameters": [
-            "Test_angle",
-            "Character",
-            "10\n",
-            "10"
           ]
         }
       ]
