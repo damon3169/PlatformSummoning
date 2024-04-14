@@ -1,0 +1,1905 @@
+{
+  "b": 31,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Scene_32Ambroise_32Test_32LD",
+  "name": "Scene Ambroise Test LD",
+  "r": 31,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 31,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.47535850871269975,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Character",
+      "persistentUuid": "0c290278-6b15-4330-99cf-445b8b301600",
+      "width": 0,
+      "x": 704,
+      "y": 924,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1477,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "2a72b3be-a9de-436c-84a7-8f9772830237",
+      "width": 537,
+      "x": 2720,
+      "y": -831,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 4992,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "7b38b0f4-8d06-48e9-8392-3642a0d22b26",
+      "width": 2464,
+      "x": -1984,
+      "y": -1888,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "07b272fd-86e9-4b22-834c-c48377b749ff",
+      "width": 0,
+      "x": 950,
+      "y": 983,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "b6c367c6-be24-49af-8d41-01577831a8d5",
+      "width": 0,
+      "x": 2205,
+      "y": 837,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "52d8e4c0-70f0-47ce-8b73-3982d33c9955",
+      "width": 0,
+      "x": 1493,
+      "y": 961,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 229,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "36931671-730d-4fec-9dff-7cecabc0d519",
+      "width": 293,
+      "x": 1025,
+      "y": 825,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 229,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "20517e47-bf7d-4a3a-90b4-ae36092ea709",
+      "width": 293,
+      "x": 1508,
+      "y": 614,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 229,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "17ecc72d-c0a7-4089-89f8-35642091c6df",
+      "width": 293,
+      "x": 2404,
+      "y": 409,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 226,
+      "layer": "",
+      "name": "Platform_Ice",
+      "persistentUuid": "28daa5d0-9a03-4280-a05e-df479c47c2d2",
+      "width": 873,
+      "x": 1532,
+      "y": 59,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 88,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "16cbd396-66f5-47d8-9f4c-022a9408c869",
+      "width": 0,
+      "x": 1225,
+      "y": -12,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 88,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "7ed85019-cd17-4234-b496-d9ce43abe361",
+      "width": 0,
+      "x": 1161,
+      "y": -70,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 88,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "4973e925-6315-4ca3-9ee4-da6c18981ad6",
+      "width": 0,
+      "x": 1096,
+      "y": -133,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 88,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "5c9c2f4f-d442-407d-9cf4-7242a996f938",
+      "width": 0,
+      "x": 1027,
+      "y": -197,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 229,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "f6905d87-5d4e-4b0d-b2e4-549c3492fa51",
+      "width": 281,
+      "x": 715,
+      "y": -235,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 119,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "c04fc463-3e9d-43b2-bf84-4235dcacff62",
+      "width": 281,
+      "x": 467,
+      "y": -557,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "37b478b4-13f5-4098-8a69-e128abfb4b4e",
+      "width": 111,
+      "x": 1681,
+      "y": -1123,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "a1ccd827-16f4-4719-93d0-8648cc1d9282",
+      "width": 109,
+      "x": 1952,
+      "y": -1288,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 229,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "3a1509ab-b046-4ecd-91a2-1cd88f8b3609",
+      "width": 293,
+      "x": 1777,
+      "y": -2020,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Ice",
+      "persistentUuid": "b8e38487-fad6-4421-b86a-3b943ef47cf7",
+      "width": 262,
+      "x": 2125,
+      "y": -1602,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "bd55e17a-8999-4782-a125-ecad4014f148",
+      "width": 111,
+      "x": 2526,
+      "y": -1757,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "2f0eba75-4457-4e8b-bec3-081b47f177ea",
+      "width": 145,
+      "x": 2797,
+      "y": -1922,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 205,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "78c9404d-14f1-45da-a017-9ab0ec2ad79e",
+      "width": 1245,
+      "x": 2831,
+      "y": -2244,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "72c14792-4e2b-4116-8a37-74873988896c",
+      "width": 174,
+      "x": 3072,
+      "y": -1923,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "6d695656-7d35-407b-9cc2-44b32ac81cc6",
+      "width": 193,
+      "x": 3362,
+      "y": -1925,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "0c8de6e2-9921-4b22-b5bd-d52f9179f018",
+      "width": 184,
+      "x": 3649,
+      "y": -1925,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Ice",
+      "persistentUuid": "c7da506d-564a-4123-8c7f-2602fde22b57",
+      "width": 485,
+      "x": 3955,
+      "y": -1923,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "c6d8493e-4979-40e5-a929-668cecf0ac32",
+      "width": 1699,
+      "x": 4600,
+      "y": -2075,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 379,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "5c61fa3c-934a-49c2-a763-3af6222c86b9",
+      "width": 436,
+      "x": 6347,
+      "y": -2210,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 127,
+      "layer": "",
+      "name": "Platform",
+      "persistentUuid": "4116154e-89cd-4dba-ab1d-76030bcec0ed",
+      "width": 1336,
+      "x": 6445,
+      "y": -1977,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 179,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "b9f87cd7-f8b3-4474-9b84-0a1569225a07",
+      "width": 0,
+      "x": 2085,
+      "y": -1781,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 179,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "8b413948-ecda-41e7-a79d-471945ea674c",
+      "width": 0,
+      "x": 2142,
+      "y": -1837,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 179,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "e3d98c44-6785-4044-93a7-ae87ef6b673a",
+      "width": 0,
+      "x": 2026,
+      "y": -1721,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "c50c28e5-79ae-49a7-befd-a7c5dd401933",
+      "width": 0,
+      "x": 3368,
+      "y": 788,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "17b3125f-b0c3-4cbe-b7a6-dbe3fff2cbb9",
+      "width": 0,
+      "x": 3305,
+      "y": 847,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "d955b5e0-6285-443c-9fb8-8cda14731138",
+      "width": 0,
+      "x": 3237,
+      "y": 907,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "4225f98e-3d08-4316-82bd-d1f369f10b50",
+      "width": 0,
+      "x": 3168,
+      "y": 971,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "0533bd76-db69-42df-a52b-1a7779f16c4b",
+      "width": 0,
+      "x": 3633,
+      "y": 549,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "d1465185-063d-4f7a-b7d5-3fb8849d7309",
+      "width": 0,
+      "x": 3570,
+      "y": 608,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "42e5e07a-db84-4bb3-8c47-effde8b32588",
+      "width": 0,
+      "x": 3502,
+      "y": 668,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "5276a038-6a22-48e4-9699-d88e47281fe6",
+      "width": 0,
+      "x": 3433,
+      "y": 732,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "c29021fb-f6aa-4cc6-a558-5341919b764d",
+      "width": 0,
+      "x": 3898,
+      "y": 304,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "7e83c3f9-e327-4944-9dab-afef434a9ccc",
+      "width": 0,
+      "x": 3835,
+      "y": 363,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "242a077d-6071-45e6-8127-783425dc5d89",
+      "width": 0,
+      "x": 3767,
+      "y": 423,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "4f53e36b-5f0d-4c84-9789-72ca59cdbc5f",
+      "width": 0,
+      "x": 3698,
+      "y": 487,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "7c7f7217-7688-4595-b60c-0a8fadf3cb54",
+      "width": 0,
+      "x": 4163,
+      "y": 72,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "ed882593-ed8e-46ed-92db-4f2efb99dbe9",
+      "width": 0,
+      "x": 4100,
+      "y": 131,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "d76b9d07-a47b-4ab7-80a9-9515732d7590",
+      "width": 0,
+      "x": 4032,
+      "y": 191,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "2adc8e6e-9c9f-47ed-9465-72e7cd023b0b",
+      "width": 0,
+      "x": 3963,
+      "y": 255,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "32d0743f-9e05-49ba-b9ac-81f3d3532a17",
+      "width": 0,
+      "x": 4429,
+      "y": -174,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "613d1ecf-815d-4317-820d-e0b1da554c18",
+      "width": 0,
+      "x": 4366,
+      "y": -115,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "a83b4260-3e6f-433c-b4d0-cff3f3849ed7",
+      "width": 0,
+      "x": 4298,
+      "y": -55,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "557a0d2e-1b23-481a-8d42-7dab0373b50c",
+      "width": 0,
+      "x": 4229,
+      "y": 9,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "c502a8ad-80f7-47c1-9ce3-7f2acba383fa",
+      "width": 0,
+      "x": 4688,
+      "y": -397,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "a00cea61-cb43-4540-8a90-f5aa7a714bd3",
+      "width": 0,
+      "x": 4625,
+      "y": -338,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "9772ec70-0615-4fe4-814b-88f3894d1b49",
+      "width": 0,
+      "x": 4557,
+      "y": -278,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "5c94495b-e363-4bf0-80a7-40ff09a06a19",
+      "width": 0,
+      "x": 4488,
+      "y": -214,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "2e1679d2-242c-40de-882d-3aed2e3fca78",
+      "width": 0,
+      "x": 4953,
+      "y": -636,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "198d063f-1401-4af6-97d3-44156d734e7b",
+      "width": 0,
+      "x": 4890,
+      "y": -577,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "6e9bce69-b3cf-4112-9513-5b5afd5c8099",
+      "width": 0,
+      "x": 4822,
+      "y": -517,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "556b1db7-8ea5-4da8-8e06-6bea8f99b19c",
+      "width": 0,
+      "x": 4753,
+      "y": -453,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "b7f98df4-c190-44c2-9cf8-d7555ed47216",
+      "width": 0,
+      "x": 5218,
+      "y": -881,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "e9f5cf86-1ac9-4906-9ced-a8e9c02ca979",
+      "width": 0,
+      "x": 5155,
+      "y": -822,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "bff87761-8216-4fb1-bac8-9c185b17e729",
+      "width": 0,
+      "x": 5087,
+      "y": -762,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "0a527f2b-8fe0-47f8-ab67-d44d4b598060",
+      "width": 0,
+      "x": 5018,
+      "y": -698,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "ffa1ecb9-3974-437a-85b9-aaa1b331bb19",
+      "width": 0,
+      "x": 5483,
+      "y": -1113,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "1370a1f7-782a-412b-bc38-da867b1a1934",
+      "width": 0,
+      "x": 5420,
+      "y": -1054,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "7566b81d-7f4a-419d-93bb-770885fa1938",
+      "width": 0,
+      "x": 5352,
+      "y": -994,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "8d3b2d35-b165-4edf-b74c-e01cef7ae891",
+      "width": 0,
+      "x": 5283,
+      "y": -930,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "de752a68-181c-4770-ae16-c69ca8fa5635",
+      "width": 0,
+      "x": 5749,
+      "y": -1359,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "12bcf265-2ba2-41dc-bd16-71a96df767a5",
+      "width": 0,
+      "x": 5686,
+      "y": -1300,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "919ca5e7-7413-445c-a2da-96410de3fee4",
+      "width": 0,
+      "x": 5618,
+      "y": -1240,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "b0a2e97d-dd9a-4082-8c27-a927a5ac8c16",
+      "width": 0,
+      "x": 5549,
+      "y": -1176,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "5f68ae3f-f45d-4969-8a3f-90a1401a6ec9",
+      "width": 0,
+      "x": 5812,
+      "y": -1408,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "d7d5f9f5-e224-4383-823b-333aec2ecbc4",
+      "width": 0,
+      "x": 6077,
+      "y": -1640,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "936ed978-8853-4700-a2de-e14b37088f4a",
+      "width": 0,
+      "x": 6014,
+      "y": -1581,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "88935d46-c849-421a-8457-9eafa9f020ef",
+      "width": 0,
+      "x": 5946,
+      "y": -1521,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "fa060f08-8080-44ce-ba35-b94192b82ebc",
+      "width": 0,
+      "x": 5877,
+      "y": -1457,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "292fbfac-c548-4933-8487-e81b3f9b372a",
+      "width": 0,
+      "x": 6280,
+      "y": -1827,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "63ba78b5-a12b-4b17-abea-208363dbaad2",
+      "width": 0,
+      "x": 6212,
+      "y": -1767,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "ef7b02f5-a39f-4751-acfe-678b952d219e",
+      "width": 0,
+      "x": 6143,
+      "y": -1703,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1323,
+      "layer": "",
+      "name": "Platform_Reset",
+      "persistentUuid": "01e76680-5483-4d7b-84dd-03d4d67b7f0d",
+      "width": 3869,
+      "x": 416,
+      "y": 1037,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 268,
+      "layer": "",
+      "name": "Platform_Reset",
+      "persistentUuid": "be266f8a-45ad-4a9b-94e4-012d45fd91e2",
+      "width": 2251,
+      "x": 1007,
+      "y": -915,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "NewLight",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 500,
+        "color": "248;223;58",
+        "debugMode": false,
+        "texture": ""
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "NewLight"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Scene Ambroise"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "OrbitingObjects::AnimateOrbitingObjects"
+          },
+          "parameters": [
+            "",
+            "Character",
+            "OrbiteJump",
+            "1",
+            "50",
+            "450",
+            "100",
+            "",
+            "1000",
+            "-90",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OrbitingObjects::AnimateOrbitingObjects"
+          },
+          "parameters": [
+            "",
+            "Character",
+            "OrbiteDash",
+            "3",
+            "30",
+            "250",
+            "150",
+            "",
+            "1000",
+            "-90",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OrbitingObjects::AnimateOrbitingObjects"
+          },
+          "parameters": [
+            "",
+            "Character",
+            "OrbiteDoubleJump",
+            "2",
+            "100",
+            "500",
+            "150",
+            "",
+            "1000",
+            "-90",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "PlatformBehavior::CanJump"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "OrbiteJump",
+            "FireBullet",
+            "OrbiteJump.X()",
+            "OrbiteJump.Y()",
+            "ProjJump",
+            "Character",
+            "350",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AdvancedJump::HorizontalDash::IsDashing"
+          },
+          "parameters": [
+            "Character",
+            "HorizontalDash",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "OrbiteDash",
+            "FireBullet",
+            "OrbiteDash.X()",
+            "OrbiteDash.Y()",
+            "ProjDash",
+            "Character",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "ProjDash",
+            "\"Life\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Space"
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::IsJumping"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "<",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::SetCanJump"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "OrbiteDoubleJump",
+            "FireBullet",
+            "OrbiteDoubleJump.X()",
+            "OrbiteDoubleJump.Y()",
+            "ProjDoubleJump",
+            "Character",
+            "100",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::JumpSpeed"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "=",
+            "550"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"X\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AdvancedJump::HorizontalDash::SimulateDashKey"
+          },
+          "parameters": [
+            "Character",
+            "HorizontalDash",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::IsOnFloor"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::JumpSpeed"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "=",
+            "800"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "ProjDash",
+            "\"Life\"",
+            ">=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjDash",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Platform manager"
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "blueX": 10,
+            "blueY": -4,
+            "direction": 0,
+            "fillMode": 0,
+            "greenX": 10,
+            "greenY": -4,
+            "minSize": 8,
+            "offset": 0,
+            "redX": 2,
+            "redY": 2,
+            "sampleSize": 512,
+            "slices": 5
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": false
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Layer",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 128,
+      "ambientLightColorG": 128,
+      "ambientLightColorR": 128,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": true,
+      "isLightingLayer": true,
+      "isLocked": false,
+      "name": "Lighting",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
+    },
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "HorizontalDash",
+      "type": "AdvancedJump::HorizontalDash"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Physics2",
+      "type": "Physics2::Physics2Behavior",
+      "gravityX": 0,
+      "gravityY": 9.8,
+      "scaleX": 100,
+      "scaleY": 100
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerCharacterAnimator",
+      "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator"
+    },
+    {
+      "name": "PlatformerConfigurationStack",
+      "type": "AdvancedJump::PlatformerConfigurationStack"
+    },
+    {
+      "name": "PlatformerGamepadMapper",
+      "type": "Gamepads::PlatformerGamepadMapper"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "SmoothPlatformerCamera",
+      "type": "SmoothCamera::SmoothPlatformerCamera"
+    }
+  ]
+}

@@ -346,17 +346,6 @@
             "ProjDash",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "MettreAutour"
-          },
-          "parameters": [
-            "Test_angle",
-            "Character",
-            "10\n",
-            "10"
-          ]
         }
       ]
     },
@@ -482,13 +471,54 @@
         },
         {
           "type": {
-            "value": "Physics2::Collision"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "Character",
-            "Physics2",
-            "Platform",
-            ""
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "Character",
+                "Physics2",
+                "Platform",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "Character",
+                "Physics2",
+                "Platform_Breakable",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "Character",
+                "Physics2",
+                "Platform_Ice",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "Character",
+                "Physics2",
+                "Platform_Reset",
+                ""
+              ]
+            }
           ]
         }
       ],

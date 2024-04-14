@@ -191,6 +191,7 @@
       "conditions": [
         {
           "type": {
+            "inverted": true,
             "value": "CollisionNP"
           },
           "parameters": [
@@ -203,6 +204,56 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "ToString(Character.PlatformerObject::Deceleration())",
+            "\"info\"",
+            "\"test\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::Deceleration"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "=",
+            "1000000"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Platform_Ice",
+            "Character",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "ToString(Character.PlatformerObject::Deceleration())",
+            "\"info\"",
+            "\"test\""
+          ]
+        },
         {
           "type": {
             "value": "PlatformBehavior::Deceleration"
@@ -221,11 +272,10 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
             "value": "CollisionNP"
           },
           "parameters": [
-            "Platform_Ice",
+            "Platform_Reset",
             "Character",
             "",
             "",
@@ -233,16 +283,54 @@
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "PlatformBehavior::Deceleration"
-          },
-          "parameters": [
-            "Character",
-            "PlatformerObject",
-            "=",
-            "100000"
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "ProjDash",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProjDash",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "ProjDoubleJump",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProjDoubleJump",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "ProjJump",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ProjJump",
+                ""
+              ]
+            }
           ]
         }
       ]
