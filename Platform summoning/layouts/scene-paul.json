@@ -1,15 +1,15 @@
 {
-  "b": 68,
+  "b": 56,
   "disableInputWhenNotFocused": true,
   "mangledName": "Scene_32Paul",
   "name": "Scene Paul",
-  "r": 54,
+  "r": 55,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 34,
+  "v": 20,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.3895856273827301,
+    "snap": false,
+    "zoomFactor": 0.44485159988866696,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -310,11 +310,136 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "07b272fd-86e9-4b22-834c-c48377b749ff",
+      "width": 0,
+      "x": 1195,
+      "y": 1013,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "2b4fc5fe-7fa7-4979-a60d-0f06fcf8b938",
+      "width": 0,
+      "x": 1658,
+      "y": 881,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "2d87bd12-179b-48e0-9602-b652b7eef42b",
+      "width": 0,
+      "x": 2308,
+      "y": 152,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "00450b83-69eb-43ec-a568-eda0af9107e7",
+      "width": 0,
+      "x": 3069,
+      "y": 576,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "14f8148a-5eeb-45d6-848e-a9be89c870d9",
+      "width": 0,
+      "x": 2063,
+      "y": 831,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "f172bc49-3322-41a6-b2d4-48e3c2d9a2d9",
+      "width": 0,
+      "x": 2688,
+      "y": 277,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Lighting",
+      "name": "NewLight",
+      "persistentUuid": "d45104de-2fe7-4927-8470-942af2093c2a",
+      "width": 0,
+      "x": 2683,
+      "y": 762,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "NewLight",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 500,
+        "color": "248;223;58",
+        "debugMode": false,
+        "texture": ""
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "NewLight"
+      }
+    ]
   },
   "events": [
     {
@@ -353,11 +478,11 @@
           },
           "parameters": [
             "",
-            "OrbiteJump",
+            "Character",
             "OrbiteDash",
             "1",
-            "180",
-            "150",
+            "30",
+            "250",
             "150",
             "",
             "1",
@@ -448,14 +573,26 @@
       "actions": [
         {
           "type": {
-            "value": "Create"
+            "value": "FireBullet::FireBullet::FireTowardObject"
           },
           "parameters": [
-            "",
-            "ProjDash",
+            "OrbiteDash",
+            "FireBullet",
             "OrbiteDash.X()",
             "OrbiteDash.Y()",
+            "ProjDash",
+            "Character",
+            "0",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "ProjDash",
+            "\"Life\""
           ]
         }
       ]
@@ -669,6 +806,33 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "ProjDash",
+            "\"Life\"",
+            ">=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjDash",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -733,20 +897,46 @@
       ],
       "effects": [
         {
-          "effectType": "HslAdjustment",
+          "effectType": "Glitch",
           "name": "Effect",
           "doubleParameters": {
-            "alpha": 1,
-            "hue": 0,
-            "lightness": 0,
-            "saturation": 0
+            "animationFrequency": 60,
+            "blueX": 10,
+            "blueY": -4,
+            "direction": 0,
+            "fillMode": 0,
+            "greenX": 10,
+            "greenY": -4,
+            "minSize": 8,
+            "offset": 0,
+            "redX": 2,
+            "redY": 2,
+            "sampleSize": 512,
+            "slices": 5
           },
           "stringParameters": {},
           "booleanParameters": {
-            "colorize": false
+            "average": false
           }
         }
       ]
+    },
+    {
+      "ambientLightColorB": 128,
+      "ambientLightColorG": 128,
+      "ambientLightColorR": 128,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": true,
+      "isLightingLayer": true,
+      "isLocked": false,
+      "name": "Lighting",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
     }
   ],
   "behaviorsSharedData": [
@@ -789,6 +979,10 @@
     {
       "name": "Platform",
       "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerCharacterAnimator",
+      "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator"
     },
     {
       "name": "PlatformerConfigurationStack",

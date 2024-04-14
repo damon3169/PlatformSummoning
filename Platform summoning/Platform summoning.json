@@ -308,8 +308,143 @@
         "alwaysLoaded": false,
         "file": "assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform6.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform6.png\"}",
         "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform6",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Greenman3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Greenman3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sliding.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sliding.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sliding2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/sliding2.png\"}",
+        "name": "sliding",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Fall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Fall.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Jumping.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Jumping.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Jumping2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Jumping2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Jumping3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Jumping3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Jumping4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Jumping4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Greenman3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_Greenman3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Greenman4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_Greenman4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Greenman5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_Greenman5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Greenman6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_Greenman6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Idle.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ProjDoubleJump4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ProjDoubleJump3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sliding3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "sliding2",
         "smoothed": true,
         "userAdded": true
       }
@@ -318,7 +453,7 @@
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Character",
       "type": "Sprite",
@@ -343,13 +478,13 @@
           "type": "AdvancedJump::HorizontalDash",
           "PlatformerCharacter": "PlatformerObject",
           "PlatformerConfigurationStack": "PlatformerConfigurationStack",
-          "DashInitialSpeed": 2000,
+          "DashInitialSpeed": 4000,
           "DashSustainDurationMin": 0,
           "DashSustainDurationMax": 0.25,
           "DashSustainAcceleration": 1500,
           "DashSustainSpeedMax": 750,
           "DashSustainGravity": 0,
-          "DashDecceleration": 3000,
+          "DashDecceleration": 2000,
           "DashGravity": 1000,
           "CoolDownDuration": 0.25,
           "LastDirectionIsLeft": false,
@@ -365,10 +500,10 @@
           "fixedRotation": false,
           "canSleep": true,
           "shape": "Circle",
-          "shapeDimensionA": 20,
+          "shapeDimensionA": 30,
           "shapeDimensionB": 0,
-          "shapeOffsetX": -2,
-          "shapeOffsetY": -2,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
           "polygonOrigin": "Center",
           "vertices": [],
           "density": 1,
@@ -379,6 +514,20 @@
           "gravityScale": 5,
           "layers": 1,
           "masks": 1
+        },
+        {
+          "name": "PlatformerCharacterAnimator",
+          "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+          "EnableAnimationChanges": true,
+          "EnableHorizontalFlipping": true,
+          "IdleAnimationName": "Idle",
+          "RunAnimationName": "Run",
+          "JumpAnimationName": "Jump",
+          "FallAnimationName": "Fall",
+          "ClimbAnimationName": "Climb",
+          "PlatformerBehavior": "PlatformerObject",
+          "Animation": "Animation",
+          "Flippable": "Flippable"
         },
         {
           "name": "PlatformerConfigurationStack",
@@ -396,6 +545,7 @@
           "JumpButton": "A or Cross"
         },
         {
+          "maxSpeed": 400,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1000000,
@@ -405,7 +555,6 @@
           "jumpSpeed": 850,
           "jumpSustainTime": 0,
           "maxFallingSpeed": 1000,
-          "maxSpeed": 600,
           "xGrabTolerance": 10,
           "slopeMaxAngle": 60,
           "canGoDownFromJumpthru": false,
@@ -489,7 +638,7 @@
       ],
       "animations": [
         {
-          "name": "Greenman",
+          "name": "Idle",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -499,7 +648,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Greenman",
+                  "image": "Idle",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -515,20 +664,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 25,
-                        "y": 22
+                        "x": 23,
+                        "y": 20
                       },
                       {
-                        "x": 74,
-                        "y": 22
+                        "x": 75,
+                        "y": 20
                       },
                       {
-                        "x": 74,
-                        "y": 85
+                        "x": 75.5,
+                        "y": 85.5
                       },
                       {
-                        "x": 25,
-                        "y": 85
+                        "x": 23,
+                        "y": 86
                       }
                     ]
                   ]
@@ -548,7 +697,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "b2ef854b74d176c44a63b9094be663436fe9427b3472bd6ae6561ad9fd1a0062_GreenHero_Punch_8.png",
+                  "image": "sliding2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -564,20 +713,380 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 25,
-                        "y": 22
+                        "x": 23,
+                        "y": 20
                       },
                       {
-                        "x": 74,
-                        "y": 22
+                        "x": 75,
+                        "y": 20
                       },
                       {
-                        "x": 74,
-                        "y": 85
+                        "x": 75.5,
+                        "y": 85.5
                       },
                       {
-                        "x": 25,
-                        "y": 85
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fall",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Fall.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jump",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Jumping.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Jumping2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Jumping3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Jumping4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\assets_Greenman3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\assets_Greenman4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\assets_Greenman5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\assets_Greenman6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 20
+                      },
+                      {
+                        "x": 75,
+                        "y": 20
+                      },
+                      {
+                        "x": 75.5,
+                        "y": 85.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 86
                       }
                     ]
                   ]
@@ -670,10 +1179,6 @@
                       {
                         "x": 64,
                         "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
                       }
                     ]
                   ]
@@ -1103,7 +1608,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ProjDoubleJump2",
+                  "image": "ProjDoubleJump3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
