@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5800155239904861,
+    "zoomFactor": 0.8353591827059895,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -86,16 +86,138 @@
       "initialVariables": []
     },
     {
+      "angle": 328,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "cedff051-e882-4b38-bdf1-c423b4a390c4",
+      "width": 0,
+      "x": 1036,
+      "y": 564,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
       "angle": 0,
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "Platform",
-      "persistentUuid": "b6d3036e-31b9-4f73-b211-b1856f09a8fc",
+      "name": "PlatformSlide",
+      "persistentUuid": "ae008356-5b55-494d-90cb-e8591f5b3538",
       "width": 0,
-      "x": 768,
-      "y": 224,
-      "zOrder": 5,
+      "x": 1088,
+      "y": 576,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 91,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "4dc136b1-38f3-4a9e-963e-297649f249b7",
+      "width": 0,
+      "x": 833,
+      "y": 415,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Breakable",
+      "persistentUuid": "51dcba9f-d31e-4b2f-a60a-f1ce04d5f681",
+      "width": 320,
+      "x": 576,
+      "y": 480,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Platform_Ice",
+      "persistentUuid": "7e526bd7-aa3d-496a-9b60-cf61dc479b5a",
+      "width": 352,
+      "x": 1120,
+      "y": 384,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 91,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "65ccee08-8ce1-4dd6-988a-b7c21565b8ee",
+      "width": 0,
+      "x": 769,
+      "y": 353,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 91,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "d54e3680-a100-45a7-a6ce-f74e453f1215",
+      "width": 0,
+      "x": 705,
+      "y": 287,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 91,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "8d08d4a2-8a8a-4990-92ce-27fc86680e68",
+      "width": 0,
+      "x": 641,
+      "y": 225,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 91,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlatformSlide",
+      "persistentUuid": "536bf6d5-d8f2-44ce-b826-4b919974193f",
+      "width": 0,
+      "x": 575,
+      "y": 159,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -357,11 +479,11 @@
             "value": "CollisionNP"
           },
           "parameters": [
-            "Character",
             "PlatformSlide",
-            "ProjJump",
-            "",
-            ""
+            "Character",
+            "Character.Y()",
+            "90",
+            "no"
           ]
         }
       ],
@@ -374,19 +496,6 @@
             "Character",
             "Physics2",
             "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "Physics2::ApplyPolarForce"
-          },
-          "parameters": [
-            "Character",
-            "Physics2",
-            "ProjDash.AngleToObject(Character)",
-            "90",
-            "0",
-            "0"
           ]
         },
         {
@@ -421,11 +530,30 @@
         },
         {
           "type": {
-            "value": "Delete"
+            "value": "DebuggerTools::ConsoleLog"
           },
           "parameters": [
-            "ProjDash",
-            ""
+            "\"touch slide\"",
+            "\"info\"",
+            "\"test\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::SimulateLeftKey"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::SimulateRightKey"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
           ]
         }
       ]
@@ -645,6 +773,13 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Platform manager"
     }
   ],
   "layers": [

@@ -684,9 +684,10 @@
           "JumpButton": "A or Cross"
         },
         {
+          "canGrabWithoutMoving": false,
           "name": "PlatformerObject",
+          "slopeMaxAngle": 5,
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "slopeMaxAngle": 9,
           "maxSpeed": 400,
           "acceleration": 1000000,
           "deceleration": 10000000,
@@ -698,7 +699,6 @@
           "xGrabTolerance": 10,
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
-          "canGrabWithoutMoving": true,
           "ladderClimbingSpeed": 150,
           "useLegacyTrajectory": false,
           "yGrabOffset": 0
@@ -2098,9 +2098,9 @@
         },
         {
           "name": "Platform",
+          "platformType": "Ladder",
           "type": "PlatformBehavior::PlatformBehavior",
           "canBeGrabbed": false,
-          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],

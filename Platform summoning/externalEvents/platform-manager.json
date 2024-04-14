@@ -46,17 +46,6 @@
             "Platform_Breakable",
             "\"TimerBreakingPlatform\""
           ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Platform_Breakable",
-            "Animation",
-            "=",
-            "\"Breaking\""
-          ]
         }
       ]
     },
@@ -78,12 +67,43 @@
       "actions": [
         {
           "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"Collid with breakable\"",
+            "\"info\"",
+            "\"test\""
+          ]
+        },
+        {
+          "type": {
             "value": "ActivateBehavior"
           },
           "parameters": [
             "Platform_Breakable",
             "Platform",
             "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Physics2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Animation",
+            "=",
+            "\"Breaking\""
           ]
         },
         {
@@ -102,16 +122,6 @@
           "parameters": [
             "Platform_Breakable",
             "\"TimerBreakingPlatform\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Platform_Breakable",
-            "Physics2",
-            ""
           ]
         }
       ]
@@ -206,16 +216,6 @@
       "actions": [
         {
           "type": {
-            "value": "DebuggerTools::ConsoleLog"
-          },
-          "parameters": [
-            "ToString(Character.PlatformerObject::Deceleration())",
-            "\"info\"",
-            "\"test\""
-          ]
-        },
-        {
-          "type": {
             "value": "PlatformBehavior::Deceleration"
           },
           "parameters": [
@@ -244,16 +244,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "DebuggerTools::ConsoleLog"
-          },
-          "parameters": [
-            "ToString(Character.PlatformerObject::Deceleration())",
-            "\"info\"",
-            "\"test\""
-          ]
-        },
         {
           "type": {
             "value": "PlatformBehavior::Deceleration"
@@ -342,6 +332,24 @@
                 ""
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "DebuggerTools::EnableDebugDraw"
+          },
+          "parameters": [
+            "",
+            "",
+            "yes",
+            "",
+            ""
           ]
         }
       ]
