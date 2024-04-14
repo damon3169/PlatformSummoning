@@ -600,6 +600,7 @@
         },
         {
           "name": "PlatformerObject",
+          "slopeMaxAngle": 9,
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "maxSpeed": 400,
           "acceleration": 1000000,
@@ -610,7 +611,6 @@
           "jumpSustainTime": 0,
           "maxFallingSpeed": 1000,
           "xGrabTolerance": 10,
-          "slopeMaxAngle": 60,
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
