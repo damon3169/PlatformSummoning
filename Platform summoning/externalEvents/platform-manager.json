@@ -281,6 +281,17 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Character",
+            "\"TimerFall\"",
+            ">",
+            "0.6"
+          ]
         }
       ],
       "actions": [],
