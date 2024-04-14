@@ -45,6 +45,17 @@
             "Platform_Breakable",
             "\"TimerBreakingPlatform\""
           ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Animation",
+            "=",
+            "\"BreakAnim\""
+          ]
         }
       ]
     },
