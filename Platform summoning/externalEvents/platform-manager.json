@@ -211,14 +211,63 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
-            "value": "CollisionNP"
+            "value": "KeyPressed"
           },
           "parameters": [
-            "Platform_Ice",
+            "",
+            "Left"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetGlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "JumpDirLeft",
+            "True"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Right"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetGlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "JumpDirLeft",
+            "False"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "PlatformBehavior::IsObjectOnGivenFloor"
+          },
+          "parameters": [
             "Character",
-            "",
-            "",
+            "PlatformerObject",
+            "Platform_Ice",
             ""
           ]
         }
@@ -242,13 +291,12 @@
       "conditions": [
         {
           "type": {
-            "value": "CollisionNP"
+            "value": "PlatformBehavior::IsObjectOnGivenFloor"
           },
           "parameters": [
-            "Platform_Ice",
             "Character",
-            "",
-            "",
+            "PlatformerObject",
+            "Platform_Ice",
             ""
           ]
         }
@@ -263,6 +311,58 @@
             "PlatformerObject",
             "=",
             "0"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "JumpDirLeft",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "JumpDirLeft",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerObject"
+              ]
+            }
           ]
         }
       ]
