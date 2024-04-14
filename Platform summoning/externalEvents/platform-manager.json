@@ -211,30 +211,13 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::Or"
+            "value": "PlatformBehavior::CurrentSpeed"
           },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "Gamepads::C_Button_pressed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Left\"",
-                ""
-              ]
-            }
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "<",
+            "-10"
           ]
         }
       ],
@@ -255,30 +238,13 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::Or"
+            "value": "PlatformBehavior::CurrentSpeed"
           },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Right"
-              ]
-            },
-            {
-              "type": {
-                "value": "Gamepads::C_Button_pressed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Right\"",
-                ""
-              ]
-            }
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            ">",
+            "10"
           ]
         }
       ],
@@ -321,6 +287,17 @@
             "=",
             "1000000"
           ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "=",
+            "400"
+          ]
         }
       ]
     },
@@ -337,6 +314,12 @@
             "Platform_Ice",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -349,6 +332,27 @@
             "PlatformerObject",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "=",
+            "800"
+          ]
+        },
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "ToString(Character.PlatformerObject::CurrentSpeed())",
+            "\"info\"",
+            ""
           ]
         }
       ],
