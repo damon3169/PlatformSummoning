@@ -262,6 +262,17 @@
       "conditions": [
         {
           "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Character",
+            "\"TimerFall\"",
+            ">",
+            "0.6"
+          ]
+        },
+        {
+          "type": {
             "value": "CollisionNP"
           },
           "parameters": [
@@ -270,17 +281,6 @@
             "",
             "",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Character",
-            "\"TimerFall\"",
-            ">",
-            "0.6"
           ]
         }
       ],

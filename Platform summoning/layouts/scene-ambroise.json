@@ -692,6 +692,15 @@
             "0",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "RemoveObjectTimer"
+          },
+          "parameters": [
+            "Character",
+            "\"TimerFall\""
+          ]
         }
       ]
     },
@@ -780,6 +789,11 @@
         "includeConfig": 0
       },
       "target": "Platform manager"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
