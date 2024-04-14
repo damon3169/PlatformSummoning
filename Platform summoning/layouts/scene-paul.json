@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.507957511813177,
+    "zoomFactor": 0.36458333333333703,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -32,8 +32,8 @@
       "name": "Character",
       "persistentUuid": "0c290278-6b15-4330-99cf-445b8b301600",
       "width": 0,
-      "x": 704,
-      "y": 924,
+      "x": 1244,
+      "y": 832,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -392,8 +392,8 @@
       "layer": "",
       "name": "Platform",
       "persistentUuid": "c39e560d-e6cd-4bf0-98af-8885c59efb2a",
-      "width": 352,
-      "x": 1408,
+      "width": 224,
+      "x": 1536,
       "y": -896,
       "zOrder": 2,
       "numberProperties": [],
@@ -823,6 +823,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Moving_Platform",
+      "persistentUuid": "1e11a812-e3e0-457d-a620-ba28d258197f",
+      "width": 128,
+      "x": 1472,
+      "y": 544,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -856,6 +872,13 @@
         "includeConfig": 0
       },
       "target": "Scene Ambroise"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Platform manager"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1241,6 +1264,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -1403,6 +1431,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RectangleMovement",
+      "type": "RectangleMovement::RectangleMovement"
     },
     {
       "name": "Resizable",
