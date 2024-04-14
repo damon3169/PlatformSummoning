@@ -542,7 +542,7 @@
         "alwaysLoaded": false,
         "file": "assets/Platform_Reset.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Platform_Reset.png\"}",
         "name": "Platform_Reset",
         "smoothed": true,
         "userAdded": true
@@ -684,10 +684,10 @@
           "JumpButton": "A or Cross"
         },
         {
-          "canGrabWithoutMoving": false,
           "name": "PlatformerObject",
-          "slopeMaxAngle": 5,
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "canGrabWithoutMoving": false,
+          "slopeMaxAngle": 5,
           "maxSpeed": 400,
           "acceleration": 1000000,
           "deceleration": 10000000,
@@ -2098,8 +2098,8 @@
         },
         {
           "name": "Platform",
-          "platformType": "Ladder",
           "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "Ladder",
           "canBeGrabbed": false,
           "yGrabOffset": 0
         }
@@ -2427,7 +2427,7 @@
         {
           "name": "RectangleMovement",
           "type": "RectangleMovement::RectangleMovement",
-          "Width": 500,
+          "Width": 512,
           "Height": 0,
           "Clockwise": true,
           "HorizontalEdgeDuration": 3,
