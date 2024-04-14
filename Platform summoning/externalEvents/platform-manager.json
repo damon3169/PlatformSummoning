@@ -46,6 +46,17 @@
             "Platform_Breakable",
             "\"TimerBreakingPlatform\""
           ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Animation",
+            "=",
+            "\"Breaking\""
+          ]
         }
       ]
     },
@@ -86,13 +97,21 @@
         },
         {
           "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+            "value": "RemoveObjectTimer"
           },
           "parameters": [
             "Platform_Breakable",
-            "Animation",
-            "=",
-            "\"Breaking\""
+            "\"TimerBreakingPlatform\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Physics2",
+            ""
           ]
         }
       ]
@@ -132,6 +151,25 @@
             "Animation",
             "=",
             "\"Platform_Breakable\""
+          ]
+        },
+        {
+          "type": {
+            "value": "RemoveObjectTimer"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "\"TimerBreakingPlatformRecovery\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Physics2",
+            "yes"
           ]
         }
       ]
