@@ -20,13 +20,12 @@
       "conditions": [
         {
           "type": {
-            "value": "CollisionNP"
+            "value": "PlatformBehavior::IsObjectOnGivenFloor"
           },
           "parameters": [
-            "Platform_Breakable",
             "Character",
-            "",
-            "",
+            "PlatformerObject",
+            "Platform_Breakable",
             ""
           ]
         },
