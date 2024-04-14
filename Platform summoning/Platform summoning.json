@@ -303,6 +303,15 @@
         "name": "assets\\GreenHero_Punch_8.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform6",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -367,7 +376,7 @@
           "restitution": 0,
           "linearDamping": 0,
           "angularDamping": 0.1,
-          "gravityScale": 1,
+          "gravityScale": 5,
           "layers": 1,
           "masks": 1
         },
@@ -387,23 +396,23 @@
           "JumpButton": "A or Cross"
         },
         {
+          "acceleration": 1000000,
+          "deceleration": 10000000,
+          "gravity": 600,
+          "ignoreDefaultControls": false,
+          "jumpSpeed": 850,
+          "jumpSustainTime": 0,
+          "maxFallingSpeed": 1000,
+          "maxSpeed": 600,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 3000,
-          "deceleration": 2000,
-          "gravity": 1000,
-          "jumpSpeed": 1000,
-          "jumpSustainTime": 0,
-          "maxSpeed": 600,
+          "xGrabTolerance": 10,
           "slopeMaxAngle": 60,
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
-          "ignoreDefaultControls": false,
           "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 700,
           "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
           "yGrabOffset": 0
         },
         {
@@ -631,7 +640,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform2",
+                  "image": "66b19bf24d3a8b17b3ed60270725247aa2f81719057f8e8775f43d739f4aa6ca_Platform6",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -647,20 +656,24 @@
                   "customCollisionMask": [
                     [
                       {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      },
+                      {
                         "x": 0,
                         "y": 0
                       },
                       {
-                        "x": 128,
+                        "x": 64,
                         "y": 0
                       },
                       {
-                        "x": 128,
-                        "y": 128
-                      },
-                      {
-                        "x": 0,
-                        "y": 128
+                        "x": 64,
+                        "y": 64
                       }
                     ]
                   ]
@@ -1265,7 +1278,14 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "JumpDirLeft",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1282,6 +1302,18 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/platformertrajectory"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/advancedjump"
