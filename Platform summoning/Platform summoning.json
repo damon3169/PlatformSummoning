@@ -586,6 +586,15 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Platform_Reset2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Platform_Reset2",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2546,7 +2555,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Platform_Reset",
+                  "image": "Platform_Reset2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

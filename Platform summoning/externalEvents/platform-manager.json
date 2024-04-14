@@ -60,7 +60,7 @@
             "Platform_Breakable",
             "\"TimerBreakingPlatform\"",
             ">=",
-            "2"
+            "0.8"
           ]
         }
       ],
