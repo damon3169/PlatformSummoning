@@ -67,11 +67,71 @@
       "actions": [
         {
           "type": {
-            "value": "Delete"
+            "value": "ActivateBehavior"
           },
           "parameters": [
             "Platform_Breakable",
-            ""
+            "Platform",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "\"TimerBreakingPlatformRecovery\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Animation",
+            "=",
+            "\"Breaking\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "\"TimerBreakingPlatformRecovery\"",
+            ">=",
+            "2"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Platform",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Platform_Breakable",
+            "Animation",
+            "=",
+            "\"Platform_Breakable\""
           ]
         }
       ]
