@@ -679,6 +679,10 @@
       "type": "PlatformBehavior::PlatformBehavior"
     },
     {
+      "name": "PlatformerCharacterAnimator",
+      "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator"
+    },
+    {
       "name": "PlatformerConfigurationStack",
       "type": "AdvancedJump::PlatformerConfigurationStack"
     },
