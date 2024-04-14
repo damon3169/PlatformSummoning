@@ -465,11 +465,30 @@
       "conditions": [
         {
           "type": {
-            "value": "PlatformBehavior::IsFalling"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "Character",
-            "PlatformerObject"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Space"
+              ]
+            }
           ]
         },
         {
@@ -479,6 +498,58 @@
           "parameters": [
             "Character",
             "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "<",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::SetCanJump"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "=",
+            "2"
           ]
         },
         {
@@ -502,6 +573,17 @@
             "Character",
             "100",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::JumpSpeed"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "=",
+            "550"
           ]
         }
       ]
@@ -553,8 +635,40 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::IsOnFloor"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "JumpCount",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::JumpSpeed"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "=",
+            "800"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

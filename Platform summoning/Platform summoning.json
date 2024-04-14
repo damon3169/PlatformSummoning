@@ -396,6 +396,8 @@
           "JumpButton": "A or Cross"
         },
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1000000,
           "deceleration": 10000000,
           "gravity": 600,
@@ -404,8 +406,6 @@
           "jumpSustainTime": 0,
           "maxFallingSpeed": 1000,
           "maxSpeed": 600,
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "xGrabTolerance": 10,
           "slopeMaxAngle": 60,
           "canGoDownFromJumpthru": false,
@@ -1284,6 +1284,12 @@
       "name": "JumpDirLeft",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "JumpCount",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
