@@ -476,7 +476,7 @@
         "alwaysLoaded": false,
         "file": "assets/sliding3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/sliding3.png\"}",
         "name": "sliding2",
         "smoothed": true,
         "userAdded": true
@@ -1792,7 +1792,7 @@
         "alwaysLoaded": false,
         "file": "assets/Dash10.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Dash10.png\"}",
         "name": "Dash10",
         "smoothed": true,
         "userAdded": false
@@ -1828,7 +1828,7 @@
         "alwaysLoaded": false,
         "file": "assets/Run18.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Run18.png\"}",
         "name": "Run18",
         "smoothed": true,
         "userAdded": true
@@ -1939,6 +1939,15 @@
         "name": "ProjDoubleJump5",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sliding2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sliding2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
