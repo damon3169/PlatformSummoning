@@ -822,6 +822,33 @@
         "name": "ProjDoubleJump4",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Line2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Line2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/InvisibleWall.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "InvisibleWall",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3407,6 +3434,12 @@
       "name": "NbProjDoubleJump",
       "type": "number",
       "value": 1
+    },
+    {
+      "folded": true,
+      "name": "Finished",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
