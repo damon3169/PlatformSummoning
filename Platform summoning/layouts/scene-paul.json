@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.7077142870147393,
+    "zoomFactor": 0.35269049347715964,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -18141,6 +18141,18 @@
                 ""
               ]
             }
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Character",
+            "\"TimerFall\"",
+            ">",
+            "0"
           ]
         }
       ],
