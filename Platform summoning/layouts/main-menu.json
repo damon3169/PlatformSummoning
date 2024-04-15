@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.3526904934771525,
+    "zoomFactor": 0.2616774116992373,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -690,66 +690,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\sliding3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 25,
-                        "y": 28
-                      },
-                      {
-                        "x": 75,
-                        "y": 28
-                      },
-                      {
-                        "x": 75,
-                        "y": 76
-                      },
-                      {
-                        "x": 25,
-                        "y": 76
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
       "name": "Play_button",
       "type": "PanelSpriteButton::PanelSpriteButton",
@@ -1050,9 +990,6 @@
       },
       {
         "objectName": "InvisibleWall"
-      },
-      {
-        "objectName": "NewSprite"
       },
       {
         "objectName": "Play_button"
