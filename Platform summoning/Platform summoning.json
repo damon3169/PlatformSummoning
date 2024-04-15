@@ -836,7 +836,7 @@
         "alwaysLoaded": false,
         "file": "assets/Line2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Line2.png\"}",
         "name": "Line2",
         "smoothed": true,
         "userAdded": true
@@ -847,6 +847,15 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "InvisibleWall",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Line3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Line3",
         "smoothed": true,
         "userAdded": true
       }
