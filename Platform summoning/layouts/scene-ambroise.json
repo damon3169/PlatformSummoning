@@ -247,6 +247,16 @@
       "actions": [
         {
           "type": {
+            "value": "PlatformBehavior::IgnoreDefaultControls"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "yes"
+          ]
+        },
+        {
+          "type": {
             "value": "ActivateBehavior"
           },
           "parameters": [
@@ -270,21 +280,40 @@
         },
         {
           "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Character",
-            "PlatformerObject",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "ResetObjectTimer"
           },
           "parameters": [
             "Character",
             "\"TimerFall\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjDoubleJump",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerGamepadMapper",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerCharacterAnimator",
+            "no"
           ]
         },
         {
@@ -296,15 +325,6 @@
             "Animation",
             "=",
             "\"sliding\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "ProjDoubleJump",
-            ""
           ]
         }
       ]
@@ -326,6 +346,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::IgnoreDefaultControls"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "yes"
+          ]
+        },
         {
           "type": {
             "value": "ActivateBehavior"
@@ -351,21 +381,40 @@
         },
         {
           "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Character",
-            "PlatformerObject",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "ResetObjectTimer"
           },
           "parameters": [
             "Character",
             "\"TimerFall\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjJump",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerGamepadMapper",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerCharacterAnimator",
+            "no"
           ]
         },
         {
@@ -377,15 +426,6 @@
             "Animation",
             "=",
             "\"sliding\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "ProjJump",
-            ""
           ]
         }
       ]
@@ -407,6 +447,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "PlatformBehavior::IgnoreDefaultControls"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "yes"
+          ]
+        },
         {
           "type": {
             "value": "ActivateBehavior"
@@ -432,21 +482,40 @@
         },
         {
           "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Character",
-            "PlatformerObject",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "ResetObjectTimer"
           },
           "parameters": [
             "Character",
             "\"TimerFall\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ProjDash",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerGamepadMapper",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerCharacterAnimator",
+            "no"
           ]
         },
         {
@@ -458,15 +527,6 @@
             "Animation",
             "=",
             "\"sliding\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "ProjDash",
-            ""
           ]
         }
       ]
@@ -490,6 +550,26 @@
       "actions": [
         {
           "type": {
+            "value": "PlatformBehavior::IgnoreDefaultControls"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerObject",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerGamepadMapper",
+            "no"
+          ]
+        },
+        {
+          "type": {
             "value": "ActivateBehavior"
           },
           "parameters": [
@@ -500,42 +580,11 @@
         },
         {
           "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Character",
-            "PlatformerObject",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "ResetObjectTimer"
           },
           "parameters": [
             "Character",
             "\"TimerFall\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Character",
-            "Animation",
-            "=",
-            "\"sliding\""
-          ]
-        },
-        {
-          "type": {
-            "value": "DebuggerTools::ConsoleLog"
-          },
-          "parameters": [
-            "\"touch slide\"",
-            "\"info\"",
-            "\"test\""
           ]
         },
         {
@@ -554,6 +603,27 @@
           "parameters": [
             "Character",
             "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Character",
+            "PlatformerCharacterAnimator",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Character",
+            "Animation",
+            "=",
+            "\"sliding\""
           ]
         }
       ]
@@ -641,17 +711,6 @@
                 "value": "Physics2::Collision"
               },
               "parameters": [
-                "Character",
-                "Physics2",
-                "Platform_Reset",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Physics2::Collision"
-              },
-              "parameters": [
                 "Moving_Platform",
                 "Physics2",
                 "Character",
@@ -672,56 +731,211 @@
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Character",
-            "PlatformerObject",
-            "yes"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Character",
+                "Physics2",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerObject",
+                "yes"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Character",
-            "Physics2",
-            "no"
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Character",
-            "Animation",
-            "=",
-            "\"Greenman\""
-          ]
-        },
-        {
-          "type": {
-            "value": "RotateTowardAngle"
-          },
-          "parameters": [
-            "Character",
-            "0",
-            "0",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "RemoveObjectTimer"
-          },
-          "parameters": [
-            "Character",
-            "\"TimerFall\""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "Character",
+                    "PlatformerObject",
+                    "Platform_Breakable",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "Character",
+                    "PlatformerObject",
+                    "Platform",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "Character",
+                    "PlatformerObject",
+                    "Platform_Ice",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "Character",
+                    "PlatformerObject",
+                    "Moving_Platform",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "Character",
+                    "PlatformerObject",
+                    "Moving_PlatformHB",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerGamepadMapper",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerObject",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerObject",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Character",
+                "Physics2",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Character",
+                "Animation",
+                "=",
+                "\"Idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Character",
+                "0",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveObjectTimer"
+              },
+              "parameters": [
+                "Character",
+                "\"TimerFall\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "JumpCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Character",
+                "PlatformerCharacterAnimator",
+                "yes"
+              ]
+            }
           ]
         }
       ]
@@ -806,13 +1020,6 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Platform manager"
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -838,11 +1045,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [

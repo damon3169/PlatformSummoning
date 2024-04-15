@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.41630252177337446,
+    "zoomFactor": 2.94570627057057,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -16166,21 +16166,6 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
-      "name": "Character",
-      "persistentUuid": "b11ef96e-1573-449e-a28f-941b3f3dcb5f",
-      "width": 0,
-      "x": 924,
-      "y": 524,
-      "zOrder": 130,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
       "layer": "Lighting",
       "name": "NewLight",
       "persistentUuid": "bd4f8ac2-cefa-486f-b9c8-c70d7b5359d0",
@@ -16413,6 +16398,21 @@
       "x": 2004,
       "y": 564,
       "zOrder": 77,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Character",
+      "persistentUuid": "89d77ded-7b45-405c-b126-6f143d9a8f1a",
+      "width": 0,
+      "x": 700,
+      "y": 508,
+      "zOrder": 130,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -18369,7 +18369,7 @@
           "parameters": [
             "",
             "1",
-            "\"Y\"",
+            "\"Share\"",
             ""
           ]
         }
