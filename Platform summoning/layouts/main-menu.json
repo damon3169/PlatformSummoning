@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.2616774116992373,
+    "zoomFactor": 0.3300560049166209,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -144,8 +144,8 @@
       "name": "Play_button",
       "persistentUuid": "f169e50e-71a6-4168-a9bf-e5877ce463c5",
       "width": 0,
-      "x": 64,
-      "y": 256,
+      "x": 800,
+      "y": 512,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -159,8 +159,8 @@
       "name": "Quit_button",
       "persistentUuid": "e15cfddb-ae9b-4bd1-b4e6-484c77fdd41c",
       "width": 0,
-      "x": 64,
-      "y": 640,
+      "x": 800,
+      "y": 736,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -865,88 +865,6 @@
           "width": 192
         }
       }
-    },
-    {
-      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
-      "name": "SquareWhiteSlider",
-      "type": "PanelSpriteSlider::PanelSpriteSlider",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "BarTopPadding": 6,
-        "BarLeftPadding": 6,
-        "BarRightPadding": 6,
-        "BarBottomPadding": 6,
-        "LabelMargin": 6
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 4,
-          "height": 28,
-          "leftMargin": 2,
-          "rightMargin": 2,
-          "texture": "Square White Slider Border.png",
-          "tiled": false,
-          "topMargin": 4,
-          "width": 265
-        },
-        "FillBar": {
-          "bottomMargin": 2,
-          "height": 16,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Square White Slider Fill Bar.png",
-          "tiled": false,
-          "topMargin": 0,
-          "width": 16
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "It displays the value when it changes.",
-          "font": "",
-          "textAlignment": "",
-          "characterSize": 20,
-          "color": {
-            "b": 221,
-            "g": 221,
-            "r": 221
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "It displays the value when it changes.",
-            "font": "",
-            "textAlignment": "",
-            "characterSize": 20,
-            "color": "221;221;221"
-          }
-        },
-        "Thumb": {
-          "bottomMargin": 2,
-          "height": 36,
-          "leftMargin": 1,
-          "rightMargin": 1,
-          "texture": "Square White Slider Thumb.png",
-          "tiled": false,
-          "topMargin": 2,
-          "width": 22
-        }
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -996,9 +914,6 @@
       },
       {
         "objectName": "Quit_button"
-      },
-      {
-        "objectName": "SquareWhiteSlider"
       }
     ]
   },

@@ -247,6 +247,18 @@
       "actions": [
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "CyanExplosion",
+            "ProjDoubleJump.X()",
+            "ProjDoubleJump.Y()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ActivateBehavior"
           },
           "parameters": [
@@ -328,6 +340,18 @@
       "actions": [
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "GreenExplosion",
+            "ProjJump.X()",
+            "ProjJump.Y()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ActivateBehavior"
           },
           "parameters": [
@@ -407,6 +431,18 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Explosion3",
+            "ProjDash.X()",
+            "ProjDash.Y()",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "ActivateBehavior"
@@ -779,40 +815,6 @@
             "PlatformerObject",
             "=",
             "10000"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Platform manager"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "wistful-waltz-theo-gerard-main-version-25155-02-13.mp3",
-            "yes",
-            "MusicChannelVolume(1)",
-            "1"
           ]
         }
       ]
