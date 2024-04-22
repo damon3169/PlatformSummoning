@@ -1948,6 +1948,83 @@
         "name": "assets\\sliding2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/On Screen Controls Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "On Screen Controls Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/16e804dda11f82902d6b7469420d7b3b81d68ef00af71783070dd284114e8cdc_On Screen Controls Button_Hovered.png",
+          "name": "On Screen Controls Button_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/On Screen Controls Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "On Screen Controls Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/174644b98156cc55e10a4eb991aebb06e0a2c9f98915abb1422cababc3124de3_On Screen Controls Button_Idle.png",
+          "name": "On Screen Controls Button_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/On Screen Controls Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "On Screen Controls Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5a44f1cb97ef7da59c97179346b71d3f5b913af0208795784707c062fc20749f_On Screen Controls Button_Pressed.png",
+          "name": "On Screen Controls Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Roboto-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Roboto-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "name": "Roboto-Regular.ttf"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_4.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1987,7 +2064,7 @@
           "DashSustainGravity": 0,
           "DashDecceleration": 2000,
           "DashGravity": 1000,
-          "CoolDownDuration": 1,
+          "CoolDownDuration": 0.6,
           "LastDirectionIsLeft": false,
           "DashKeyIsPressed": false,
           "IsSustainning": false,
@@ -4818,6 +4895,141 @@
           ]
         }
       ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "ceade84d2cc0571dc97ba3ad034dc7b7766670668e8a16c247d32a8a4c0f55ed",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 30,
+      "emitterForceMin": 30,
+      "flow": 800,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 1,
+      "name": "RedInvok",
+      "particleAlpha1": 255,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 0,
+      "particleBlue2": 0,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 0,
+      "particleGreen2": 0,
+      "particleLifeTimeMax": 0.3,
+      "particleLifeTimeMin": 0.3,
+      "particleRed1": 245,
+      "particleRed2": 255,
+      "particleSize1": 100,
+      "particleSize2": 200,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tank": 30,
+      "textureParticleName": "assets\\ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_6.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 10,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "additive": false,
+      "assetStoreId": "ceade84d2cc0571dc97ba3ad034dc7b7766670668e8a16c247d32a8a4c0f55ed",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 30,
+      "emitterForceMin": 30,
+      "flow": 800,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 1,
+      "name": "GreenInvok",
+      "particleAlpha1": 255,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 255,
+      "particleBlue2": 64,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 255,
+      "particleGreen2": 255,
+      "particleLifeTimeMax": 0.3,
+      "particleLifeTimeMin": 0.3,
+      "particleRed1": 255,
+      "particleRed2": 0,
+      "particleSize1": 100,
+      "particleSize2": 200,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tank": 30,
+      "textureParticleName": "assets\\ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_2.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 10,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "additive": false,
+      "assetStoreId": "ceade84d2cc0571dc97ba3ad034dc7b7766670668e8a16c247d32a8a4c0f55ed",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 30,
+      "emitterForceMin": 30,
+      "flow": 800,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 1,
+      "name": "CyanInvok",
+      "particleAlpha1": 255,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 172,
+      "particleBlue2": 151,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 166,
+      "particleGreen2": 151,
+      "particleLifeTimeMax": 0.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 0,
+      "particleRed2": 0,
+      "particleSize1": 100,
+      "particleSize2": 700,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tank": 1,
+      "textureParticleName": "assets\\ed3987c71848740a3869fa95276cee639ac1dc6adbaeddeb92475c32fc2c75a6_Fly_4.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 10,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -4876,6 +5088,15 @@
       },
       {
         "objectName": "Explosion3"
+      },
+      {
+        "objectName": "RedInvok"
+      },
+      {
+        "objectName": "GreenInvok"
+      },
+      {
+        "objectName": "CyanInvok"
       },
       {
         "objectName": "GreenExplosion"

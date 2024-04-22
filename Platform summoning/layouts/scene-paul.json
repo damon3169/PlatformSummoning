@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.08473489146618741,
+    "zoomFactor": 0.4027225833326367,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -175,7 +175,7 @@
       "layer": "",
       "name": "Platform",
       "persistentUuid": "c9047eaf-52e3-429b-ad23-db65812722e2",
-      "width": 2240,
+      "width": 5984,
       "x": -1344,
       "y": 608,
       "zOrder": 3,
@@ -2425,9 +2425,9 @@
       "layer": "",
       "name": "Platform",
       "persistentUuid": "663d02aa-6bf7-43de-b05a-df99d35752fe",
-      "width": 160,
+      "width": 192,
       "x": 3840,
-      "y": -864,
+      "y": -928,
       "zOrder": 67,
       "numberProperties": [],
       "stringProperties": [],
@@ -2443,23 +2443,7 @@
       "persistentUuid": "a42c76ff-b108-4cc9-8544-ab68ae8952bd",
       "width": 192,
       "x": 4192,
-      "y": -864,
-      "zOrder": 67,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "layer": "",
-      "name": "Platform",
-      "persistentUuid": "9c8dd903-0c35-4f25-b977-ecfa2e189b0e",
-      "width": 608,
-      "x": 3776,
-      "y": -1024,
+      "y": -896,
       "zOrder": 67,
       "numberProperties": [],
       "stringProperties": [],
@@ -2490,7 +2474,7 @@
       "persistentUuid": "0dab9a19-bf0d-46dd-91fb-d270690d16f0",
       "width": 0,
       "x": 3808,
-      "y": -1088,
+      "y": -1100,
       "zOrder": 68,
       "numberProperties": [],
       "stringProperties": [],
@@ -2971,7 +2955,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 384,
+      "height": 320,
       "layer": "",
       "name": "Platform",
       "persistentUuid": "d0b16f51-61c5-4dc0-98db-c8193bfadd88",
@@ -6471,7 +6455,7 @@
       "persistentUuid": "4e16d3eb-b609-4aee-945f-fb3d51912173",
       "width": 2080,
       "x": 4640,
-      "y": -864,
+      "y": -832,
       "zOrder": 119,
       "numberProperties": [],
       "stringProperties": [],
@@ -16365,8 +16349,8 @@
       "name": "Character",
       "persistentUuid": "89d77ded-7b45-405c-b126-6f143d9a8f1a",
       "width": 0,
-      "x": 5056,
-      "y": -16800,
+      "x": 928,
+      "y": 512,
       "zOrder": 130,
       "numberProperties": [],
       "stringProperties": [],
@@ -16494,16 +16478,31 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 2752,
+      "customSize": false,
+      "height": 0,
       "layer": "",
-      "name": "PlatformResetTimer",
-      "persistentUuid": "5c80cf6f-0e9c-4023-be57-6fb05fe3ecd2",
-      "width": 3744,
-      "x": 896,
-      "y": 608,
+      "name": "NewTextInput",
+      "persistentUuid": "e0805b19-0827-456d-9fa2-839f956a1360",
+      "width": 0,
+      "x": 5312,
+      "y": -16992,
       "zOrder": 141,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 64,
+      "layer": "",
+      "name": "OnScreenControlsButton",
+      "persistentUuid": "dc3e284a-7e6e-4e07-b2f0-9b11f45c9844",
+      "width": 384,
+      "x": 4096,
+      "y": 672,
+      "zOrder": 142,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -17537,6 +17536,112 @@
         "characterSize": 30,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewTextInput",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Enter your nickname",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "text",
+        "textColor": "255;255;255",
+        "fillColor": "54;54;54",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
+      "name": "OnScreenControlsButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 1,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Idle.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Show leaderboard",
+          "font": "Roboto-Bold.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Show leaderboard",
+            "font": "Roboto-Bold.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -17601,6 +17706,12 @@
       },
       {
         "objectName": "Height"
+      },
+      {
+        "objectName": "NewTextInput"
+      },
+      {
+        "objectName": "OnScreenControlsButton"
       }
     ]
   },
@@ -17935,6 +18046,17 @@
             "",
             "\"PlayerTime\""
           ]
+        },
+        {
+          "type": {
+            "value": "Leaderboards::SavePlayerScore"
+          },
+          "parameters": [
+            "",
+            "\"89fa00e1-6b1d-43db-bfd4-1a797a88c53c\"",
+            "TimerElapsedTime(\"PlayerTime\")",
+            "NewTextInput.Text()"
+          ]
         }
       ]
     },
@@ -18079,6 +18201,18 @@
       "actions": [
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "GreenInvok",
+            "OrbiteJump.X()",
+            "OrbiteJump.Y()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "FireBullet::FireBullet::FireTowardObject"
           },
           "parameters": [
@@ -18136,6 +18270,18 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "RedInvok",
+            "OrbiteDash.X()",
+            "OrbiteDash.Y()",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -18297,6 +18443,18 @@
             "ProjDoubleJump",
             "Character",
             "100",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "CyanInvok",
+            "OrbiteDoubleJump.X()",
+            "OrbiteDoubleJump.Y()",
             ""
           ]
         },
@@ -18801,6 +18959,32 @@
           "parameters": [
             "",
             "\"PlayerTime\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "OnScreenControlsButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Leaderboards::DisplayLeaderboard"
+          },
+          "parameters": [
+            "",
+            "\"89fa00e1-6b1d-43db-bfd4-1a797a88c53c\"",
+            "yes"
           ]
         }
       ]
