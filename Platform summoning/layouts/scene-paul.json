@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.35269049347715964,
+    "zoomFactor": 0.08473489146618741,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -175,7 +175,7 @@
       "layer": "",
       "name": "Platform",
       "persistentUuid": "c9047eaf-52e3-429b-ad23-db65812722e2",
-      "width": 5984,
+      "width": 2240,
       "x": -1344,
       "y": 608,
       "zOrder": 3,
@@ -16365,9 +16365,145 @@
       "name": "Character",
       "persistentUuid": "89d77ded-7b45-405c-b126-6f143d9a8f1a",
       "width": 0,
-      "x": 924,
-      "y": 519,
+      "x": 5056,
+      "y": -16800,
       "zOrder": 130,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Timer",
+      "persistentUuid": "f82ea19f-ffb1-4789-828e-650eb203da11",
+      "width": 0,
+      "x": 3452,
+      "y": -803,
+      "zOrder": 133,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Timer",
+      "persistentUuid": "a276d3f8-7392-493a-8e8c-8ab995b7c04a",
+      "width": 0,
+      "x": 3841,
+      "y": -4318,
+      "zOrder": 134,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Timer",
+      "persistentUuid": "4c6190ae-d7a3-4f68-9e1e-aa2727a5a800",
+      "width": 0,
+      "x": 4960,
+      "y": -8160,
+      "zOrder": 135,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Timer",
+      "persistentUuid": "377fe70a-c333-4f4e-b2b5-b65ad2f9792b",
+      "width": 0,
+      "x": 4960,
+      "y": -10688,
+      "zOrder": 136,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Timer",
+      "persistentUuid": "2503c032-5cbe-48c2-9a0d-3e020af38c46",
+      "width": 0,
+      "x": 4476,
+      "y": -13470,
+      "zOrder": 137,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Timer",
+      "persistentUuid": "228574a2-2576-44af-bf32-430426a2edbd",
+      "width": 0,
+      "x": 2912,
+      "y": -15328,
+      "zOrder": 138,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Timer",
+      "persistentUuid": "818d0a13-3b2d-4d6e-8d34-ac2add3e91e9",
+      "width": 0,
+      "x": 6304,
+      "y": -16606,
+      "zOrder": 139,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Layer2",
+      "name": "Height",
+      "persistentUuid": "5e8bf2f4-ed3e-448c-ad0a-68261a4ef3d1",
+      "width": 0,
+      "x": 1692,
+      "y": 64,
+      "zOrder": 140,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2752,
+      "layer": "",
+      "name": "PlatformResetTimer",
+      "persistentUuid": "5c80cf6f-0e9c-4023-be57-6fb05fe3ecd2",
+      "width": 3744,
+      "x": 896,
+      "y": 608,
+      "zOrder": 141,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -17319,6 +17455,88 @@
         "characterSize": 20,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Timer",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
+        "textAlignment": "center",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Height",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
+      "textAlignment": "right",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
+        "textAlignment": "right",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -17377,6 +17595,12 @@
       },
       {
         "objectName": "Fake_Character"
+      },
+      {
+        "objectName": "Timer"
+      },
+      {
+        "objectName": "Height"
       }
     ]
   },
@@ -17701,6 +17925,15 @@
           "parameters": [
             "Finished",
             "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayerTime\""
           ]
         }
       ]
@@ -18495,6 +18728,80 @@
             "yes",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayerTime\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Timer",
+            "Text",
+            "=",
+            "TimeFormatter::SecondsToHHMMSS(TimerElapsedTime(\"PlayerTime\"))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Height",
+            "Text",
+            "=",
+            "ToString(-1*round(1.15606936*(Character.CenterY()-550)/100))+\" METERS\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Character",
+            "PlatformResetTimer",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "Finished",
+            "False"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"PlayerTime\""
+          ]
         }
       ]
     }
@@ -18667,6 +18974,23 @@
       "isLightingLayer": true,
       "isLocked": false,
       "name": "Lighting",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Layer2",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

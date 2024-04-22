@@ -691,6 +691,17 @@
               "parameters": [
                 "Character",
                 "Physics2",
+                "PlatformResetTimer",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "Character",
+                "Physics2",
                 "Platform_Breakable",
                 ""
               ]
@@ -805,6 +816,17 @@
                     "Character",
                     "PlatformerObject",
                     "Platform",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                  },
+                  "parameters": [
+                    "Character",
+                    "PlatformerObject",
+                    "PlatformResetTimer",
                     ""
                   ]
                 },
